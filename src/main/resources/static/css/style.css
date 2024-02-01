@@ -1,0 +1,75 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.notepad-files {
+	margin-bottom: 30px;
+}
+
+.notepad-files h2,
+.create-new-file h2 {
+	color: #333;
+	border-bottom: 2px solid #333;
+	padding-bottom: 5px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.file-info {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.file-info a {
+	text-decoration: none;
+	color: #3498db;
+	font-weight: bold;
+}
+
+.file-info a:hover {
+	text-decoration: underline;
+	color: #2ecc71;
+}
+
+.file-info a i {
+	color: #3498db;
+}
+
+.file-info a i:hover {
+	color: rgb(223, 134, 134);
+}
+
+.file-info span {
+	margin: 0 5px;
+	color: #333;
+}
+
+.create-new-file label {
+	display: block;
+	margin-bottom: 5px;
+	color: #333;
+}
+
+.create-new-file input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}

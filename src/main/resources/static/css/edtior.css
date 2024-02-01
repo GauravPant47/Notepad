@@ -1,0 +1,149 @@
+/* Reset some default styles */
+body {
+	font-family: 'Roboto', sans-serif;
+	font: 400 16px/1.4 'serif';
+	line-height: 1.6;
+}
+
+.editor-toolbar {
+	align-items: center;
+	justify-content: center;
+	background-color: #ffdede;
+	padding: 5px;
+	border-bottom: 1px solid #ccc;
+	border: 1px solid #ffdede;
+	border-radius: 10px;
+	width: 1340px; /* Set the same width as the textarea */
+}
+
+.editor-toolbar button, .editor-toolbar select {
+	margin-right: 15px;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.editor-toolbar button {
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border: 1px solid #ffdede;
+	border-radius: 4px;
+	/* margin: 10px; */
+	/* height: 30px;
+    width: auto; */
+	transition: 1s;
+	/* padding: px; */
+}
+
+.editor-toolbar button i {
+	color: #1d242d;
+}
+
+.editor-toolbar button i:hover {
+	color: #3498db;
+}
+
+.editor-toolbar select {
+	padding: 6px;
+	border: 1px solid #3498db;
+}
+
+.editor-toolbar i {
+	margin: 5px;
+	font-size: 20px;
+}
+
+#editor {
+    resize: none;
+    min-width: 1340px;
+    min-height: 1000px;
+    border: 1px solid #000000;
+    padding: 30px;
+    margin: 10px
+}
+
+
+@media only screen and (max-width: 768px) {
+	.editor-toolbar {
+		width: 100%; /* Adjust width for smaller screens */
+	}
+	textarea {
+		min-width: 100%; /* Adjust width for smaller screens */
+	}
+}
+
+/* Table */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	padding: 5px;
+	z-index: 1;
+}
+
+.dropdown-content input {
+	width: calc(100% - 20px);
+	margin-bottom: 8px;
+	padding: 8px;
+	box-sizing: border-box;
+	border: 1px solid #3498db;
+	border-radius: 4px;
+}
+
+.dropdown-content button {
+	color: white;
+	padding: 8px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.dropdown-content button:hover {
+	background-color: #45a049;
+}
+
+table {
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+/* New styles for tables */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: 8px;
+	text-align: left;
+}
+
+td {
+	min-width: 60px;
+	height: 30px;
+}
+
+td[contenteditable="true"] {
+	background-color: transparent;
+	outline: none;
+}
+
+th {
+	background-color: #3498db;
+	color: #ecf0f1;
+}
+
+tr:nth-child(even) {
+	background-color: transparent;
+}
+
+
+/* Table */

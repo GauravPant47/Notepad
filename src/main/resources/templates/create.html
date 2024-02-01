@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create File</title>
+</head>
+
+<body>
+    <h2>Create a New File</h2>
+    <form action="/notepad/create" method="post">
+        <label for="newFileName">File Name:</label>
+        <input type="text" id="newFileName" name="newFileName" th:value="${newFileName}" required>
+        <br>
+        <button type="submit">Create</button>
+    </form>
+</body>
+
+</html>
