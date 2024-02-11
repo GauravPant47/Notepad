@@ -1,19 +1,18 @@
 package com.notepas.textEditor;
 
-import java.awt.*;
-import javax.swing.*;
+//import java.awt.*;import javax.swing.*;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javafx.application.Platform;
-import javafx.embed.swing.JFXPanel;
-import javafx.scene.Scene;
-import javafx.scene.web.WebView;
+//import javafx.application.Platform;
+//import javafx.embed.swing.JFXPanel;
+//import javafx.scene.Scene;
+//import javafx.scene.web.WebView;
 
 @SpringBootApplication
-public class TextEditorApplication extends JFrame {
-	private final JFXPanel jfxPanel = new JFXPanel();
+public class TextEditorApplication{
+//	private final JFXPanel jfxPanel = new JFXPanel();
 
 	public static void main(String[] args) {
 		SpringApplication.run(TextEditorApplication.class, args);

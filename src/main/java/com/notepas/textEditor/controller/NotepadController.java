@@ -1,9 +1,8 @@
 package com.notepas.textEditor.controller;
 
-import java.awt.*;
+
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;

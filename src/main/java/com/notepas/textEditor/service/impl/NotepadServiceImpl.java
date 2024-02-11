@@ -23,19 +23,30 @@ public class NotepadServiceImpl implements NotepadService {
 
 	private void initializeFilesDirectory() {
 		try {
-			Files.createDirectories(Paths.get(FILES_DIRECTORY));
+			Path directoryPath = Paths.get(FILES_DIRECTORY);
+			Files.createDirectories(directoryPath);
 		} catch (IOException e) {
-			throw new RuntimeException("Error creating files directory");
+			throw new RuntimeException("Error creating files directory", e);
 		}
 	}
 
 	@Override
 	public List<NotepadFile> getAllFiles() {
 		try {
-			return Files.list(Paths.get(FILES_DIRECTORY))
-					.map(path -> new NotepadFile(path.getFileName().toString(), readFileContent(path)))
-					.collect(Collectors.toList());
+			return Files.list(Paths.get(FILES_DIRECTORY)).map(path -> {
+				try {
+					return new NotepadFile(path.getFileName().toString(), readFileContent(path));
+				} catch (IOException e) {
+					// Log the error, and return a placeholder or handle as needed
+					// You might want to log the error using a logging framework
+					e.printStackTrace(); // Temporary: Print the stack trace to console
+					return new NotepadFile("Error reading file", "");
+				}
+			}).collect(Collectors.toList());
 		} catch (IOException e) {
+			// Log the error, and rethrow or handle as needed
+			// You might want to log the error using a logging framework
+			e.printStackTrace(); // Temporary: Print the stack trace to console
 			throw new RuntimeException("Error reading files from directory");
 		}
 	}
@@ -45,30 +56,26 @@ public class NotepadServiceImpl implements NotepadService {
 		try {
 			String filePath = FILES_DIRECTORY + fileName;
 			return new NotepadFile(fileName, readFileContent(Paths.get(filePath)));
-		} catch (Exception e) {
-			throw new RuntimeException("Error reading the file");
+		} catch (IOException e) {
+			throw new RuntimeException("Error reading the file", e);
 		}
 	}
 
 	@Override
 	public void updateFile(NotepadFile notepadFile) throws IOException {
-	    String filePath = FILES_DIRECTORY + notepadFile.getFileName();
+		String filePath = FILES_DIRECTORY + notepadFile.getFileName();
 
-	    // Check if the content is null
-	    String content = notepadFile.getContent();
-	    if (content == null) {
-	        content = ""; // Provide a default value or handle as needed
-	    }
+		// Check if the content is null
+		String content = notepadFile.getContent();
+		if (content == null) {
+			content = ""; // Provide a default value or handle as needed
+		}
 
-	    Files.write(Paths.get(filePath), content.getBytes());
+		Files.write(Paths.get(filePath), content.getBytes());
 	}
 
-	private String readFileContent(Path path) {
-		try {
-			return Files.readString(path);
-		} catch (IOException e) {
-			throw new RuntimeException("Error reading file content", e);
-		}
+	private String readFileContent(Path path) throws IOException {
+		return Files.readString(path);
 	}
 
 	@Override
@@ -77,7 +84,8 @@ public class NotepadServiceImpl implements NotepadService {
 		try {
 			Files.deleteIfExists(Paths.get(filePath));
 		} catch (IOException e) {
-			throw new RuntimeException("Error deleting the file");
+			throw new RuntimeException("Error deleting the file", e);
 		}
 	}
+
 }

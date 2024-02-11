@@ -192,9 +192,12 @@
 		</h2>
 		<!-- Editor -->
 		<form id="editForm" method="post" th:action="@{/notepad/file/{fileName}(fileName=${file.fileName})}">
-			<div id="editor" contenteditable="true">
-			Here you can right....
-			</div>
+			 <!-- Use a hidden input field to store the content -->
+        <input type="hidden" name="content" id="hiddenContent" th:value="${file.content}" />
+        
+        <!-- Replace textarea with contenteditable div -->
+        <div name="content" id="editor" th:utext="${file.content}" contenteditable="true"></div>
+			<!-- <textarea name="content" id="editor" th:text="${file.content}"></textarea> -->
 		</form>
 	</div>
 	<!-- Footer -->
@@ -203,18 +206,6 @@
 			<p>&copy; 2023 Your Company. All rights reserved.</p>
 		</div>
 	</footer>
-	<script>
-		document.addEventListener("keydown", function (event) {
-			if (event.ctrlKey && event.key === 's') {
-				event.preventDefault();
-				saveFile();
-			}
-		});
-
-		function saveFile() {
-			document.getElementById('editForm').submit();
-		}
-	</script>
 </body>
 
 </html>
