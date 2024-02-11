@@ -1,5 +1,6 @@
 package com.notepas.textEditor;
 
+
 //import java.awt.*;import javax.swing.*;
 
 import org.springframework.boot.SpringApplication;
