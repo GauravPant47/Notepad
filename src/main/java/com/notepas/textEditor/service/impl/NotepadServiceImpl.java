@@ -1,6 +1,8 @@
 package com.notepas.textEditor.service.impl;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -75,8 +77,17 @@ public class NotepadServiceImpl implements NotepadService {
 	}
 
 	private String readFileContent(Path path) throws IOException {
-		return Files.readString(path);
+	    StringBuilder contentBuilder = new StringBuilder();
+	    try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
+	        char[] buffer = new char[8192]; // You can adjust the buffer size as needed
+	        int charsRead;
+	        while ((charsRead = reader.read(buffer)) != -1) {
+	            contentBuilder.append(buffer, 0, charsRead);
+	        }
+	    }
+	    return contentBuilder.toString();
 	}
+
 
 	@Override
 	public void deleteFile(String fileName) {
