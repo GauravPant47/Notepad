@@ -19,8 +19,6 @@ body.dark-mode {
 	padding: 20px;
 	width: 100%;
 	z-index: 1;
-	position: fixed;
-	top: 0;
 }
 
 .navbar.dark-mode-nav {
@@ -239,6 +237,7 @@ footer {
 	/* Adjust margin for better responsiveness */
 	transition: 0.5s;
 	padding: 20px;
+	margin-top: 60px
 }
 
 /* form dark mode*/

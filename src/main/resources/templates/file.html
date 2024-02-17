@@ -27,7 +27,7 @@
 	</div>
 	<!-- Navbar start -->
 	<header>
-		<nav class="navbar">
+		<nav class="navbar" style="	position: fixed; top: 0;">
 			<div class="editor-toolbar">
 				<button class="open-button" onclick="toggleMenu()">☰</button>
 				<!-- Add undo option -->
@@ -165,8 +165,8 @@
 		</nav>
 	</header>
 	<!-- Navbar start -->
-	<div class="main-content" id="main-content">
-		<h2>
+	<div class="main-content" id="main-content" style="margin-top: 60px;">
+		<h2 style="font-size: 13px;">
 			Edit File: <span th:text="${file.fileName}"></span>
 		</h2>
 		<!-- Editor -->

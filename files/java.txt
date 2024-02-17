@@ -88,8 +88,7 @@ the byte code.</p><p style="margin: 0in 0in 0in 0.375in; font-family: &quot;Time
      counter (PC) register&nbsp;</span></li>
  <li style="vertical-align: middle;" lang="en-GB"><span style="font-family:&quot;Times New Roman&quot;;font-size:14.0pt">Native
      method stacks</span></li>
-</ul><div><p style="color:black;background:lime;mso-highlight:lime;margin:0in;margin-left:
-.375in;font-family:&quot;Times New Roman&quot;;font-size:18.0pt;color:#515151"><span style="font-weight:bold">What is Oops in java? </span></p>
+</ul><div><p style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; margin: 0in 0in 0in 0.375in;"><span style="background-color: orange;">What is Oops in java? </span></p>
 
 <p style="margin: 0in 0in 0in 0.375in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;" lang="en-GB">Oops in java is to improve code
 readability and reusability by defining a Java program efficiently. The main
