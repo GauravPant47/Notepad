@@ -32,10 +32,11 @@ body {
 	/* margin: 10px; */
 	/* height: 30px;
     width: auto; */
-	transition: 1s;
 	/* padding: px; */
 }
-
+.editor-toolbar button:hover{
+	color: #fff;
+}
 .editor-toolbar button i {
 	color: #1d242d;
 }
