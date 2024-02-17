@@ -20,183 +20,162 @@
 </head>
 
 <body>
+	<!-- Dasbord slider -->
+	<div class="menu" id="menu">
+		<li th:each="otherFile : ${files}"><a th:href="@{/notepad/file/{fileName}(fileName=${otherFile.fileName})}"
+				th:text="${otherFile.fileName}"></a></li>
+	</div>
 	<!-- Navbar start -->
 	<header>
 		<nav class="navbar">
-			<div class="logo">
-				<a href="/notepad/">Notepad</a>
-			</div>
-			<ul class="nav-links">
-				<li><a href="/notepad/">Home</a></li>
-				<li>
-					<form action="/notepad/shutdown" method="post">
-						<button type="submit">
-							<i class="fa-solid fa-power-off"></i>
-						</button>
-					</form>
-				</li>
-				<li>
-					<div class="swipe-container">
-						<label class="switch"> <input type="checkbox" id="mode-switch" onclick="toggleDarkMode()"> <span
-								class="slider"></span>
-						</label>
+			<div class="editor-toolbar">
+				<button class="open-button" onclick="toggleMenu()">☰</button>
+				<!-- Add undo option -->
+				<button onclick="undo()" title="Undo">
+					<i class="fas fa-undo"></i>
+				</button>
+				<!-- Add font options -->
+				<select onchange="changeFont(this.value)" title="Fonts">
+					<option value="" disabled selected>Font</option>
+					<option value="Arial">Arial</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Garamond">Helvetica</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Courier New">Courier New</option>
+					<option value="cursive">Cursive</option>
+				</select>
+				<!-- Add font options -->
+				<!-- Add font size options -->
+				<select onchange="changeFontSize(this.value)" title="Font Size">
+					<option value="" disabled selected>Font Size</option>
+					<option value="1px">1px</option>
+					<option value="2px">2px</option>
+					<option value="3px">3px</option>
+					<option value="4px">4px</option>
+					<option value="5px">5px</option>
+					<option value="6px">6px</option>
+					<option value="7px">7px</option>
+					<option value="8px">8px</option>
+					<option value="9px">9px</option>
+					<option value="10px">10px</option>
+					<option value="11px">11px</option>
+					<option value="12px">12px</option>
+					<!-- Add more font size options -->
+				</select>
+				<!-- Add style options (Bold, Italic, Underline) -->
+				<button onclick="applyStyle('bold')" title="Bold">
+					<i class="fas fa-bold"></i>
+				</button>
+				<button onclick="applyStyle('italic')" title="Italic">
+					<i class="fas fa-italic"></i>
+				</button>
+				<button onclick="applyStyle('underline')" title="Underline">
+					<i class="fas fa-underline"></i>
+				</button>
+				<!-- Add bullets and numbering options -->
+				<button onclick="toggleBullets()" title="Bullets">
+					<i class="fas fa-list-ul"></i>
+				</button>
+				<button onclick="toggleNumbering()" title="Numbering">
+					<i class="fas fa-list-ol"></i>
+				</button>
+				<!-- Add text color options -->
+				<div class="dropdown">
+					<button onclick="showTextColorDropdown()" title="Text Color">
+						<i class="fas fa-paint-brush"></i>
+					</button>
+					<div id="textColorDropdown" class="dropdown-content">
+						<button class="color-button" onclick="changeTextColor('black')"
+							style="color: black; background-color: black;"></button>
+						<button class="color-button" onclick="changeTextColor('red')"
+							style="color: red; background-color: red;"></button>
+						<button class="color-button" onclick="changeTextColor('blue')"
+							style="color: blue; background-color: blue;"></button>
+						<button class="color-button" onclick="changeTextColor('green')"
+							style="color: green; background-color: green;"></button>
+						<button class="color-button" onclick="changeTextColor('orange')"
+							style="color: orange; background-color: orange;"></button>
 					</div>
-				</li>
-			</ul>
+				</div>
+				<!-- Add text highlighter -->
+				<div class="dropdown">
+					<button onclick="showTextHighlightDropdown()" title="Text Highlight">
+						<i class="fas fa-highlighter"></i>
+					</button>
+					<div id="highlightDropdown" class="dropdown-content">
+						<!-- Standard HTML color names for simplicity -->
+						<button class="color-button" onclick="highlightSelectedText('yellow')"
+							style="background-color: yellow;"></button>
+						<button class="color-button" onclick="highlightSelectedText('cyan')"
+							style="background-color: cyan;"></button>
+						<button class="color-button" onclick="highlightSelectedText('magenta')"
+							style="background-color: magenta;"></button>
+						<button class="color-button" onclick="highlightSelectedText('green')"
+							style="background-color: green;"></button>
+						<button class="color-button" onclick="highlightSelectedText('orange')"
+							style="background-color: orange;"></button>
+						<button class="color-button" onclick="removeTextHighlight()">
+							<i class="fas fa-eraser"></i>
+						</button>
+						<!-- Add more color buttons -->
+					</div>
+				</div>
+				<!-- Add alignment options -->
+				<button onclick="alignText('left')" title="Left">
+					<i class="fas fa-align-left"></i>
+				</button>
+				<button onclick="alignText('center')" title="Center">
+					<i class="fas fa-align-center"></i>
+				</button>
+				<button onclick="alignText('right')" title="Right">
+					<i class="fas fa-align-right"></i>
+				</button>
+				<!-- Add format painter -->
+				<button onclick="formatPainter()" title="Format Painter">
+					<i class="fas fa-paint-roller"></i>
+				</button>
+				<!-- Add a table icon -->
+				<div class="dropdown">
+					<button onclick="toggleDropdown()" title="Table">
+						<i class="fas fa-table"></i>
+					</button>
+					<div id="tableDropdown" class="dropdown-content">
+						Rows: <input type="text" id="rowsInput" placeholder="Number of rows"><br> Columns: <input
+							type="text" id="columnsInput" placeholder="Number of columns"><br>
+						<button onclick="createTable()" style="background-color: skyblue;"></button>
+					</div>
+				</div>
+				<button onclick="writeBelowTable()" title="Write Below Table">
+					<i class="fas fa-pencil-alt"></i>
+				</button>
+				<!-- updating a table icon -->
+				<!-- Add clear all formats option -->
+				<button onclick="clearFormats()" title="Clear All Formats">
+					<i class="fas fa-eraser"></i>
+				</button>
+				<!-- Add link option -->
+				<!-- <button onclick="addLink()" title="Link"><i class="fas fa-link"></i></button> -->
+				<!-- Add picture option -->
+				<!-- <button onclick="addPicture()" title="Picture"><i class="fas fa-image"></i></button> -->
+			</div>
 			<div class="menu-toggle">
 				<span></span> <span></span> <span></span>
 			</div>
 		</nav>
 	</header>
 	<!-- Navbar start -->
-	<!-- Dasbord slider -->
-	<div class="menu" id="menu">
-		<li th:each="otherFile : ${files}"><a th:href="@{/notepad/file/{fileName}(fileName=${otherFile.fileName})}"
-				th:text="${otherFile.fileName}"></a></li>
-	</div>
 	<div class="main-content" id="main-content">
-		<button class="open-button" onclick="toggleMenu()">☰</button>
-		<div class="editor-toolbar">
-			<!-- Add undo option -->
-			<button onclick="undo()" title="Undo">
-				<i class="fas fa-undo"></i>
-			</button>
-			<!-- Add font options -->
-			<select onchange="changeFont(this.value)" title="Fonts">
-				<option value="" disabled selected>Font</option>
-				<option value="Arial">Arial</option>
-				<option value="Verdana">Verdana</option>
-				<option value="Garamond">Helvetica</option>
-				<option value="Times New Roman">Times New Roman</option>
-				<option value="Georgia">Georgia</option>
-				<option value="Courier New">Courier New</option>
-				<option value="cursive">Cursive</option>
-			</select>
-			<!-- Add font options -->
-			<!-- Add font size options -->
-			<select onchange="changeFontSize(this.value)" title="Font Size">
-				<option value="" disabled selected>Font Size</option>
-				<option value="1px">1px</option>
-				<option value="2px">2px</option>
-				<option value="3px">3px</option>
-				<option value="4px">4px</option>
-				<option value="5px">5px</option>
-				<option value="6px">6px</option>
-				<option value="7px">7px</option>
-				<option value="8px">8px</option>
-				<option value="9px">9px</option>
-				<option value="10px">10px</option>
-				<option value="11px">11px</option>
-				<option value="12px">12px</option>
-				<!-- Add more font size options -->
-			</select>
-			<!-- Add style options (Bold, Italic, Underline) -->
-			<button onclick="applyStyle('bold')" title="Bold">
-				<i class="fas fa-bold"></i>
-			</button>
-			<button onclick="applyStyle('italic')" title="Italic">
-				<i class="fas fa-italic"></i>
-			</button>
-			<button onclick="applyStyle('underline')" title="Underline">
-				<i class="fas fa-underline"></i>
-			</button>
-			<!-- Add bullets and numbering options -->
-			<button onclick="toggleBullets()" title="Bullets">
-				<i class="fas fa-list-ul"></i>
-			</button>
-			<button onclick="toggleNumbering()" title="Numbering">
-				<i class="fas fa-list-ol"></i>
-			</button>
-			<!-- Add text color options -->
-			<div class="dropdown">
-				<button onclick="showTextColorDropdown()" title="Text Color">
-					<i class="fas fa-paint-brush"></i>
-				</button>
-				<div id="textColorDropdown" class="dropdown-content">
-					<button class="color-button" onclick="changeTextColor('black')"
-						style="color: black; background-color: black;"></button>
-					<button class="color-button" onclick="changeTextColor('red')"
-						style="color: red; background-color: red;"></button>
-					<button class="color-button" onclick="changeTextColor('blue')"
-						style="color: blue; background-color: blue;"></button>
-					<button class="color-button" onclick="changeTextColor('green')"
-						style="color: green; background-color: green;"></button>
-					<button class="color-button" onclick="changeTextColor('orange')"
-						style="color: orange; background-color: orange;"></button>
-				</div>
-			</div>
-			<!-- Add text highlighter -->
-			<div class="dropdown">
-				<button onclick="showTextHighlightDropdown()" title="Text Highlight">
-					<i class="fas fa-highlighter"></i>
-				</button>
-				<div id="highlightDropdown" class="dropdown-content">
-					<!-- Standard HTML color names for simplicity -->
-					<button class="color-button" onclick="highlightSelectedText('yellow')"
-						style="background-color: yellow;"></button>
-					<button class="color-button" onclick="highlightSelectedText('cyan')"
-						style="background-color: cyan;"></button>
-					<button class="color-button" onclick="highlightSelectedText('magenta')"
-						style="background-color: magenta;"></button>
-					<button class="color-button" onclick="highlightSelectedText('green')"
-						style="background-color: green;"></button>
-					<button class="color-button" onclick="highlightSelectedText('orange')"
-						style="background-color: orange;"></button>
-					<button class="color-button" onclick="removeTextHighlight()">
-						<i class="fas fa-eraser"></i>
-					</button>
-					<!-- Add more color buttons -->
-				</div>
-			</div>
-			<!-- Add alignment options -->
-			<button onclick="alignText('left')" title="Left">
-				<i class="fas fa-align-left"></i>
-			</button>
-			<button onclick="alignText('center')" title="Center">
-				<i class="fas fa-align-center"></i>
-			</button>
-			<button onclick="alignText('right')" title="Right">
-				<i class="fas fa-align-right"></i>
-			</button>
-			<!-- Add format painter -->
-			<button onclick="formatPainter()" title="Format Painter">
-				<i class="fas fa-paint-roller"></i>
-			</button>
-			<!-- Add a table icon -->
-			<div class="dropdown">
-				<button onclick="toggleDropdown()" title="Table">
-					<i class="fas fa-table"></i>
-				</button>
-				<div id="tableDropdown" class="dropdown-content">
-					Rows: <input type="text" id="rowsInput" placeholder="Number of rows"><br> Columns: <input
-						type="text" id="columnsInput" placeholder="Number of columns"><br>
-					<button onclick="createTable()" style="background-color: skyblue;"></button>
-				</div>
-			</div>
-			<button onclick="writeBelowTable()" title="Write Below Table">
-				<i class="fas fa-pencil-alt"></i>
-			</button>
-			<!-- updating a table icon -->
-			<!-- Add clear all formats option -->
-			<button onclick="clearFormats()" title="Clear All Formats">
-				<i class="fas fa-eraser"></i>
-			</button>
-			<!-- Add link option -->
-			<!-- <button onclick="addLink()" title="Link"><i class="fas fa-link"></i></button> -->
-			<!-- Add picture option -->
-			<!-- <button onclick="addPicture()" title="Picture"><i class="fas fa-image"></i></button> -->
-		</div>
-
 		<h2>
 			Edit File: <span th:text="${file.fileName}"></span>
 		</h2>
 		<!-- Editor -->
 		<form id="editForm" method="post" th:action="@{/notepad/file/{fileName}(fileName=${file.fileName})}">
-			 <!-- Use a hidden input field to store the content -->
-        <input type="hidden" name="content" id="hiddenContent" th:value="${file.content}" />
-        
-        <!-- Replace textarea with contenteditable div -->
-        <div name="content" id="editor" th:utext="${file.content}" contenteditable="true"></div>
+			<!-- Use a hidden input field to store the content -->
+			<input type="hidden" name="content" id="hiddenContent" th:value="${file.content}" />
+
+			<!-- Replace textarea with contenteditable div -->
+			<div name="content" id="editor" th:utext="${file.content}" contenteditable="true"></div>
 			<!-- <textarea name="content" id="editor" th:text="${file.content}"></textarea> -->
 		</form>
 	</div>

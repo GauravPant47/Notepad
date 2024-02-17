@@ -1,9 +1,4 @@
 /* Reset some default styling */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 :root {
 	--primary-color: #3498db;
@@ -20,13 +15,12 @@ body.dark-mode {
 
 /* Navbar styles */
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	background-color: var(--primary-color);
 	padding: 20px;
 	width: 100%;
-	z-index: 1000;
+	z-index: 1;
+	position: fixed;
+	top: 0;
 }
 
 .navbar.dark-mode-nav {
@@ -51,6 +45,7 @@ body.dark-mode {
 	list-style: none;
 	display: flex;
 	align-items: center;
+	margin-left: auto; /* Push nav-links to the right */
 }
 
 .nav-links li {
@@ -79,6 +74,7 @@ body.dark-mode {
 	display: inline-block;
 	width: 40px;
 	height: 20px;
+	margin-right: 20px; /* Adjust margin for better spacing */
 }
 
 .switch input {
@@ -124,6 +120,7 @@ input:checked+.slider:before {
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
+	margin-right: 10px; /* Adjust margin for better spacing */
 }
 
 .menu-toggle span {
@@ -170,7 +167,7 @@ footer {
 		display: none;
 		flex-direction: column;
 		background-color: var(--primary-color);
-		padding: 0px 0px 17px 40px;
+		padding: 0px 0px 17px 10px; /* Adjust padding for better spacing */
 		width: 100%;
 		/* Adjust width for better responsiveness */
 		position: absolute;
@@ -201,8 +198,8 @@ footer {
 	position: fixed;
 	overflow: hidden;
 	transition: width 0.5s;
-	padding-top: 60px;
 	list-style: none;
+	top: 70px;
 }
 
 .menu.dark-mode-menu {
@@ -231,7 +228,6 @@ footer {
 	color: white;
 	border: none;
 	padding: 10px 15px;
-	position: fixed;
 	top: 10px;
 	left: 10px;
 	z-index: 2;
@@ -243,9 +239,8 @@ footer {
 	/* Adjust margin for better responsiveness */
 	transition: 0.5s;
 	padding: 20px;
-	margin: 20px 0;
-	/* Adjust padding for better spacing */
 }
+
 /* form dark mode*/
 .dark-mode-form {
 	background-color: #111;
