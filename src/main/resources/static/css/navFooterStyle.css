@@ -90,10 +90,10 @@ body.dark-mode {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	background-color: #0dbe48;
 	border-radius: 20px;
 	transition: .4s;
-	border: 1px solid #2196F3;
+	border: 1px solid #0dbe48;
 }
 
 .slider:before {
@@ -103,13 +103,13 @@ body.dark-mode {
 	width: 16px;
 	left: 2px;
 	bottom: 2px;
-	background-color: #fff;
+	background-color: #0dbe48;
 	border-radius: 50%;
 	transition: .4s;
 }
 
 input:checked+.slider {
-	background-color: #2196F3;
+	background-color: #0dbe48;
 }
 
 input:checked+.slider:before {
