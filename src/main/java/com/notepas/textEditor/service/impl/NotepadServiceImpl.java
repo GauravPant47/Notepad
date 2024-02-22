@@ -1,14 +1,19 @@
 package com.notepas.textEditor.service.impl;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.jsoup.Jsoup;
 import org.springframework.stereotype.Service;
 
 import com.notepas.textEditor.model.NotepadFile;
@@ -66,28 +71,29 @@ public class NotepadServiceImpl implements NotepadService {
 	@Override
 	public void updateFile(NotepadFile notepadFile) throws IOException {
 		String filePath = FILES_DIRECTORY + notepadFile.getFileName();
+		String plainTextContent = removeHtmlTags(notepadFile.getContent());
+		Files.write(Paths.get(filePath), plainTextContent.getBytes());
+	}
 
-		// Check if the content is null
-		String content = notepadFile.getContent();
-		if (content == null) {
-			content = ""; // Provide a default value or handle as needed
-		}
-
-		Files.write(Paths.get(filePath), content.getBytes());
+	private String removeHtmlTags(String htmlContent) {
+		return Jsoup.parse(htmlContent).text();
 	}
 
 	private String readFileContent(Path path) throws IOException {
-	    StringBuilder contentBuilder = new StringBuilder();
-	    try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
-	        char[] buffer = new char[8192]; // You can adjust the buffer size as needed
-	        int charsRead;
-	        while ((charsRead = reader.read(buffer)) != -1) {
-	            contentBuilder.append(buffer, 0, charsRead);
-	        }
-	    }
-	    return contentBuilder.toString();
+		if (Files.exists(path)) {
+			StringBuilder contentBuilder = new StringBuilder();
+			try (BufferedReader reader = Files.newBufferedReader(path, StandardCharsets.UTF_8)) {
+				char[] buffer = new char[8192]; // You can adjust the buffer size as needed
+				int charsRead;
+				while ((charsRead = reader.read(buffer)) != -1) {
+					contentBuilder.append(buffer, 0, charsRead);
+				}
+			}
+			return contentBuilder.toString();
+		} else {
+			throw new FileNotFoundException("File not found: " + path);
+		}
 	}
-
 
 	@Override
 	public void deleteFile(String fileName) {
