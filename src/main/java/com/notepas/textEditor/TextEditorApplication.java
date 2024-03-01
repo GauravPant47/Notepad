@@ -13,7 +13,7 @@ public class TextEditorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TextEditorApplication.class, args);
 
-		// Open default web browser
+		// Open default web browser				
 		openBrowser("http://localhost:9091/notepad/");
 	}
 

@@ -1,19 +1,19 @@
 package com.notepas.textEditor.service.impl;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.StringReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
 import org.springframework.stereotype.Service;
 
 import com.notepas.textEditor.model.NotepadFile;
@@ -70,13 +70,33 @@ public class NotepadServiceImpl implements NotepadService {
 
 	@Override
 	public void updateFile(NotepadFile notepadFile) throws IOException {
-		String filePath = FILES_DIRECTORY + notepadFile.getFileName();
-		String plainTextContent = removeHtmlTags(notepadFile.getContent());
-		Files.write(Paths.get(filePath), plainTextContent.getBytes());
+	    String filePath = FILES_DIRECTORY + notepadFile.getFileName();
+	    String processedContent = processHtmlContent(notepadFile.getContent());
+	    Files.write(Paths.get(filePath), processedContent.getBytes());
 	}
 
-	private String removeHtmlTags(String htmlContent) {
-		return Jsoup.parse(htmlContent).text();
+	private String processHtmlContent(String htmlContent) {
+	    Document document = Jsoup.parse(htmlContent);
+	    Elements tables = document.select("table");
+
+	    for (Element table : tables) {
+	        processTable(table);
+	    }
+
+	    return document.html();
+	}
+
+	private void processTable(Element table) {
+	    Elements rows = table.select("tr");
+
+	    for (Element row : rows) {
+	        Elements cells = row.select("td");
+	        row.empty();
+
+	        for (Element cell : cells) {
+	            row.appendElement("td").text(cell.text());
+	        }
+	    }
 	}
 
 	private String readFileContent(Path path) throws IOException {

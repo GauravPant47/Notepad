@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,11 +25,15 @@ public class NotepadController {
 
 	@Autowired
 	private NotepadService notepadService;
+	
+    @Value("${app.version}")
+    private String appVersion;
 
 	@GetMapping("/")
 	public String getAllFiles(Model model) {
 		List<NotepadFile> files = notepadService.getAllFiles();
 		model.addAttribute("files", files);
+		model.addAttribute("version", appVersion);
 		return "index";
 	}
 
@@ -44,7 +49,7 @@ public class NotepadController {
 	@PostMapping("/file/{fileName}")
 	public String updateFile(@ModelAttribute NotepadFile notepadFile) throws IOException {
 		notepadService.updateFile(notepadFile);
-		return "redirect:/notepad/";
+		return "redirect:/notepad/file/{fileName}";
 	}
 
 	@PostMapping("/create")
