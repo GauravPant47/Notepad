@@ -1,0 +1,135 @@
+<html>
+ <head></head>
+ <body>
+   What is a GitHub? 
+  <br>GitHub is a supporting platform that allows software developers&nbsp; to come together and&nbsp; collaboratively create software from anywhere in the&nbsp; world if they have access to the internet. 
+  <br>It acts are service to manage and maintain software source code. this makes it easy to manage and keep track of which part of the code it integrates well with other tools that help automate the process of help automate the process of software development. 
+  <br>&nbsp; 
+  <br>What is a Repository? 
+  <br>A repository in git is used to store all of the files relevant to a project. You can think of it like a project folder where you will be storing all the configuration file code files. Meta files that are necessary for your code to run. 
+  <br>You can create a repository on GitHub representing a project and you can initialise a local repository on your system and connect both of them, once you are done making any change to the project locally you can store it on GitHub repository. 
+  <br>========================================================================================== 
+  <br>&nbsp; 
+  <br>What is a clone in GitHub? 
+  <br>Cloning a Git repository means we can create a local copy of the code provided by the developer. You can simply do it with a command line: git clone git://github.com/facebook/facebook-ios-sdk.git. and we can have the code in the facebook-ios-sdk directory. 
+  <br>&nbsp; 
+  <br>How much space do we get on GitHub? 
+  <br>We get a space of 1 GB but if it exceeds 1GB, we receive a polite email from GitHub Support requesting to reduce the size of the repository and scale it down. In addition, here we placed a limit of files exceeding 100 MB in size. 
+  <br>&nbsp; 
+  <br>What do you know about GitHub and its repository? 
+  <br>It is basically a source code management system that can be considered for both small as well as large-scale software development projects. Generally, it is widely preferred for error-free and reliable computer code. Although the users can keep up the pace with SCM, it is also possible for them to add features as per their preference. A Repository is basically the directory of Git where the metadata of the same is stored. The data might be shared or private depending on the project. 
+  <br>&nbsp; 
+  <br>How it is possible for you as a user of Git to define the information of a user, behaviour of a repository as well as the information of preferences in the programming? 
+  <br>This can simply be done with the help of a command named Git config. Although there are other methods getting the results through the command prompt always makes sure of originality and reliability. 
+  <br>&nbsp; 
+  <br>&nbsp;5.&nbsp; What exactly do you know about the GIT stash? 
+  <br>It is used when there is a need of storing the current state of a project so that the users can continue with the same at a later stage. There is often a need to switch to another job when one is active and developers can simply keep up the pace with such a situation with the Stash. It simply enables the users not to lose their edits.&nbsp; 
+  <br>&nbsp; 
+  <br>Name the tool that can be deployed for Git migration? 
+  <br>SubGit 
+  <br>&nbsp; 
+  <br>Can you tell us a few benefits of using GitHub over other platforms? 
+  <br>There are a very large number of benefits that developers can easily make sure of with this approach. The very first one is the high availability of GitHub along with excellent support. In addition to this, all the users can simply make sure of the data replication, as well as the redundancy of the same. Moreover, the error-free outcomes are exactly what for which GitHub is widely appreciated. 
+  <br>It is a platform independent and users can easily get the results in the desired manner without compromising with anything.&nbsp; Also, it is collaboration-friendly and users can simply use it in the way they are comfortable.&nbsp; 
+  <br>&nbsp; 
+  <br>What language is considered in Git and what is the benefit of same in this approach according to you? 
+  <br>Git is purely based on the C and the same makes sure of imposing a limit on the overhead of runtimes which are generally associated with other platforms in its class. Also, c makes it compatible with all the other domains and the developer’s already existing work.&nbsp; 
+  <br>&nbsp; 
+  <br>Compare Git with SVN? 
+  <br>When it comes to handling data with large size, Git is not widely preferred. However, for users, it is possible to handle more than one project with the latter provided they remain in the same repository. In multiple branches, Git fails to support the commits while the SVN can do so easily.&nbsp; 
+  <br>When it comes to software development, what are the major factors the user should be careful about? 
+  <br>The software should be developed by understanding the exact needs of the client or the task which it has to perform. It should be rich in terms of features and API. Moreover, it should be secure and reliable enough to be trusted by the organizations. There are other factors such as the length of the code and the factors that can influence the same which are also necessary to pay attention to.&nbsp; 
+  <br>&nbsp; 
+  <br>On what projects you have already worked on which are based on Github? 
+  <br>This question is often asked in IT interviews. You need to give a short or a detailed overview of the projects you have handled, the problems you faced, the outcome of the project, the benefits organization and you as a developer derived from it, the scope of the project, and the time taken to complete it. Moreover, you should mention what sort of experience you derived from them.&nbsp; 
+  <br>&nbsp; 
+  <br>What is the upper limit on the heads in the Gits? 
+  <br>There is no limit and users are free to involve any number of heads in the repository. It can be considered as a simple standard reference to a committed object. The commit object couldn’t be the same for all the heads. 
+  <br>&nbsp; 
+  <br>Tell us whatever you know about the Github development process? 
+  <br>It is basically nothing but quite similar to that of a life cycle of any specific software. Thus, you should have knowledge about the life cycle of software and the factors that can directly influence the same. There are actually several activities that are a part of the process and they are: 
+  <br>Analysis of the requirement 
+  <br>Specifications of the project 
+  <br>The architecture of the software 
+  <br>Real time implementation 
+  <br>Testing of software 
+  <br>Documentation and reporting 
+  <br>Maintenance&nbsp; 
+  <br>Training and support available with the same 
+  <br>&nbsp; 
+  <br>Do you think GitHub is better as compared to Subversion of same? Why or why not? 
+  <br>One of the best things about Github is it’s an open-source technology where the developers are free to run the versions of their projects without worrying about anything. This is exactly what enables the developers to have a quick review of all the changes made to the code over time. The users can also keep track of actual code before modification. With a subversion, nothing like this is possible. Therefore, Github is a better option.&nbsp; 
+  <br>&nbsp; 
+  <br>What was your biggest problem to date while working on a Github project? 
+  <br>Generally, problems are quite common in any development process. Depending on the nature and type of tasks, you might have faced a lot of issues. You can mention them all here and can genuinely answer how they were actually sorted out. Problem solving is actually learning how to tackle the challenges. 
+  <br>&nbsp; 
+  <br>How many characters are there in the SHAI name? 
+  <br>It is a 40 Character String that can vary in some special cases. 
+  <br>&nbsp; 
+  <br>Can you put the Computer software and computer program separate from one another by a simple comparison? 
+  <br>Basically, a computer program is nothing but part of a programming code and the same is responsible for the successful execution of a task. On the other hand, computer software includes the code for programming including the guide on how to use it and concerned documents. 
+  <br>&nbsp; 
+  <br>How it is possible for a developer to simply update the remote references related to the different objects? 
+  <br>This is possible through the Git PUSH. In fact, it is actually the prime function of the same.&nbsp; 
+  <br>&nbsp; 
+  <br>What do you know about the significance of software development? 
+  <br>In the century we are living in, the overall time is taken to accomplish a task largely matters when it comes to the corporate level. The software is powerful in saving a lot of time. Also, they impose a strict upper limit on the dependency of a task on humans. The tasks are generally governed, controlled, monitored, and accomplished by the software in the current time. Thus, the scope is software development is booming and users should pay attention to using the best available technology of the same.&nbsp; 
+  <br>&nbsp; 
+  <br>Is it possible in Git to merge a branch into the master? How can you find the same? 
+  <br>Yes, it is possible and the users can easily keep the pace up with the same anytime. The users can directly check the list under the branch section to know more about this.&nbsp; 
+  <br>&nbsp; 
+  <br>Are you familiar with the Git Clone? 
+  <br>It is basically a command which is deployed when it comes to copying a Git repository that already exists. There are a lot of programmers who make use of this. The best thing is it really doesn’t matter whether the project is large or small, the same can easily be considered whenever the need for the same is felt.&nbsp; 
+  <br>&nbsp; 
+  <br>Name any two Git repository hosting services that are common 
+  <br>These are Visual Studio Online and Git Enterprise 
+  <br>&nbsp; 
+  <br>What is SHAI name? 
+  <br>It is basically a string character that is responsible for the identification of the committed objects. The fact is users are free to make the changes to the default commit objects and the same is used for knowing and locating the overall changes made with a track record of the same.&nbsp; 
+  <br>&nbsp; 
+  <br>Is it possible to create a repository in Git? What is the step that needs to be performed before doing the same? 
+  <br>Yes, it is possible and the users have to first create a directory. The same defines the project under consideration and the information related to the same.&nbsp; 
+  <br>&nbsp; 
+  <br>What is branching it Git and what are its benefits? 
+  <br>The users are free to make as many branches as they want.&nbsp; A branch is nothing but a set of tasks that is created by the users. While performing any task, whenever the interrupt arrives, the user can switch to another branch on priority and can accomplish the same first. The users can easily switch to the previous branch without compromising with anything. It actually boosts up the speed and enables users to perform multiple tasks at the same time.&nbsp; Branches are generally marinated as one in the Github. 
+  <br>&nbsp; 
+  <br>What is Gitlog and when you can use it? 
+  <br>It is basically a command that can be executed when it comes to finding the history of a project according to the date, changes made, the developer who handled it, and the usefulness of the same.&nbsp; 
+  <br>&nbsp; 
+  <br>What is the conflict situation in Git and how it can be solved? 
+  <br>Conflict is a situation when both the commits that need to be merged have changed at the same place. This often confuses the software which change should be taken into consideration and which one should be neglected. The best manner to solve this concern is to simply edit the files through the appropriate procedure.&nbsp; 
+  <br>&nbsp; 
+  <br>Can you name an alternative method for performing the merging task in Git? 
+  <br>This is called Rebasing. Generally, the users don’t prefer this method and this is because it takes a lot of time for the accomplishment of a lot of tasks that matter a lot. Sometimes a lot of unexpected errors can declare their presence in case this task is not performed accurately. This is a method that is useful only for those who have great experience in Git technology.&nbsp; 
+  <br>&nbsp; 
+  <br>Name a few graphical Git clients for the Linux platforms? 
+  <br>These are 
+  <br>Git-g, Git cola 
+  <br>Git GUI 
+  <br>Giggle 
+  <br>These clients can easily be used in conjunction with each other or they can be deployed independently&nbsp; 
+  <br>&nbsp; 
+  <br>What is the significance of Git version control? 
+  <br>When it comes to simply track the background of an array of files and changing their version, this approach is generally preferred. This actually works by capturing the snapshot of the moments and tasks associated. All the information remains present in the repository. However, if the users want, they can simply keep it at any desired location.&nbsp; 
+  <br>&nbsp; 
+  <br>What do you mean by the Commit message? 
+  <br>It is basically a message which you can see on the screen while working on Git whenever a change is committed. It is possible to keep a record of all the changes made by the user in an editor. The history of changes needs to be explored lately for a specific task.&nbsp; 
+  <br>&nbsp; 
+  <br>How can the users enhance the functionality of a branch in Git? 
+  <br>It is possible to do so by adding the desired feature in any of the branches. This is generally done through a command Git merge and the best part is there is no limit on adding the features in the branch. Any branch can have any number of features. 
+  <br>&nbsp; 
+  <br>What is the gist of Git? 
+  <br><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Gists are a great way to share the work of any developer. They can share parts of files, full applications, or single files. Anyone can access gists at&nbsp;</span><a href="https://gist.github.com/"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">https://gist.github.com</span></a><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">. Each Gist is a Git repository, which means, it can be forked and cloned.</span> 
+  <br>&nbsp; 
+  <br>How can we create a gist? 
+  <br>Creating a gist requires a very simple process as depicted in the steps below: - 
+  <br>Sign in to GitHub. 
+  <br>We should navigate to the gist home page. 
+  <br>After this, we need to type an optional description and name for the gist. 
+  <br>Key in the text of your gist into the gist text box. 
+  <br>Following this, we should select either to create a public gist or to create a secret gist. 
+  <br>&nbsp; 
+  <br>What is gist programming? 
+  <br>GitHub provides a hosting service that facilitates a web-based Git repository. It includes all the functionality of Git with additional features added in. The gist is an additional attribute added to GitHub, which facilitates the sharing of code snippets, notes, to do lists, and more. We can save our Gists as secret or public in the repository. 
+ </body>
+</html>

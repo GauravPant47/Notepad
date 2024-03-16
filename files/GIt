@@ -1,0 +1,209 @@
+<html>
+ <head></head>
+ <body>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">User Git Bash Here</p>
+  <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git config --global user.name __</span></li>
+  </ul>
+  <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git config --global user. Email __</span></li>
+  </ul>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">How To check set user.name and user. Email</p>
+  <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git config --global user.name Gaurav</span></li>
+  </ul>
+  <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git config --global user. Email gaurav667@gamil.com</span></li>
+  </ul>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Code . Opening (VS.Code)</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">How to Initialization code</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git init -&gt;&nbsp;<span style="color: rgb(55, 86, 35);">They are initialized the empty git repository</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Ls -&gt; lart -&gt;&nbsp;<span style="color: rgb(55, 86, 35);">Sow any hidden folder</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git status -&gt;&nbsp;<span style="color: rgb(55, 86, 35);">Sow all file update</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;"><span style="color: rgb(55, 86, 35);"><br></span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;"><span style="color: rgb(55, 86, 35);"><br></span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">Git add fileName</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Status-&gt;<span style="color: red;">&nbsp;Green show the staged area</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git commit-&gt;&nbsp;<span style="color: red;">open vim auditor</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Clack-&gt;I-&gt; initial commit -&gt; click esc then: write wq enter</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Touch File name-&gt;&nbsp;&nbsp;<span style="color: red;">touch help us to create a new file from any code reading ex -&gt;Html, css, js, java, c++, c.</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git add . -&gt;&nbsp;<span style="color: red;">add all types of file in staged area</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git add -A -&gt;&nbsp;<span style="color: red;">use -A with git add function we add all the file in staged area</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git commit -m "Update any message" -&gt;&nbsp;<span style="color: red;">to all file commit in one time</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Clear-&gt;&nbsp;<span style="color: red;">clear terminal</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git checkout -&gt;&nbsp;<span style="color: red;">checkout help us to recover the file and file data but previous commit file (index.html, style.css, mein.java)</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git checkout filename (index.html)-&gt;&nbsp;<span style="color: red;">recover single file data&nbsp; and file</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git checkout -f -&gt;&nbsp;<span style="color: red;">recover the all file in your last commit</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git log -&gt;&nbsp;<span style="color: red;">use log we check all previous commit updates And {press q} button you can out tha log</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git log -p -1,2,3,4 -&gt;&nbsp;<span style="color: red;">You&nbsp; check last comments jo bhi deak na ho</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git diff -&gt;&nbsp;&nbsp;<span style="color: red;">diff command compare to working tree to staging - arya</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git diff --staged -&gt;&nbsp;<span style="color: red;">to compare the last commit to staging arya</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git commit -a -m " update your message"</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Ls -&gt;&nbsp;<span style="color: red;">show list all file</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git rm filename -&gt;&nbsp;<span style="color: red;">to remove the file and staging area complete delete</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git rm --cached filename -&gt;&nbsp;<span style="color: red;">Untracking the file if your file are update in .gitignore folder</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Git status -s -&gt;&nbsp;<span style="color: red;">small status</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Touch .gitignore-&gt;&nbsp;<span style="color: red;">if you thinking if some file are not sowany one use .gitignore folder and a write the file name in this .gitignore file</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Exp :</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">.gitignore</p>
+  <p style="margin: 0in 0in 0in 0.75in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">Loge.txt</p>
+  <p style="margin: 0in 0in 0in 0.75in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">Myloge.log</p>
+  <p style="margin: 0in 0in 0in 0.75in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">Homeimg.img</p>
+  <p style="margin: 0in 0in 0in 0.75in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Branch -&gt;&nbsp;<span style="color: red;">create a second working area without interfere the master file just like</span></p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;</p>
+  <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(83, 129, 53);"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Second file</span></li>
+   <li style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(83, 129, 53);"><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Master file</span></li>
+  </ul>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt; color: red;">With green color you check with working file you have</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-size: 14pt;"><span style="font-family: Calibri;">Git branch -M main -&gt;&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;; color: red;">change existing branch name</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git branch&nbsp; new-branch-name -&gt;&nbsp;<span style="color: red;">create a new branch and direct open the new branch</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git branch -&gt;&nbsp;&nbsp;<span style="color: red;">check witch branch have create</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;"><span style="background: black;">&nbsp; To change the branch&nbsp;</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git checkout branchName -&gt;&nbsp;<span style="color: red;">use the funda we switch the one branch to another branch</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">To merge second branch to master branch</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">Step 1.&nbsp; come master branch</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;"><span style="color: red;">Step 2.&nbsp;</span>Git merge branchname -&gt;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Enter</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">Second branch merge with master branch</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git checkout -b branchname -&gt;<span style="color: red;">&nbsp;use this condition we create a branch and enter directly inside the branch</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">Hosting the you repository in GitHub</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;"><span style="color: red;">Step 1.&nbsp;</span>git remote add origin&nbsp;<a href="https://github.com/"><span style="color: black;">https://github.com//</span></a></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Enter</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git remote -&gt;<span style="color: red;">&nbsp;check the remote (origin)</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git remote -v -&gt;<span style="color: red;">&nbsp; Show the url and update how to fetch and push</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;"><span style="color: red;">Step 2.&nbsp;</span>git push origin master -&gt;<span style="color: red;">&nbsp;to push the master branch in origin</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Enter</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Pwd -&gt;<span style="color: red;">&nbsp;Present working directory</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Cd -&gt;<span style="color: red;">&nbsp;change directory</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Cd../ -&gt;<span style="color: red;">&nbsp;send back to current file</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git mv first.txt rename-first.txt -&gt;&nbsp;<span style="color: red;">using this command we will change tha file name</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Rm -rf .git -&gt;&nbsp;<span style="color: red;">delete the git repository</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git clone&nbsp;<a href="https://github.com/reop-name%20/file.git"><span style="color: black;">https://github.com/reop-name /file.git</span></a>&nbsp;folder-name -&gt;&nbsp;<span style="color: red;">use this code we are clone the any file available in GitHub in the (folder-name) folder</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --stat-&gt;&nbsp;<span style="color: red;">Using git log --stat we will check the previous logs in short forms</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --pretty=oneline-&gt;<span style="color: red;">&nbsp;it will show the all commit in one line</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --pretty=short-&gt;&nbsp;<span style="color: red;">showing tha all commit in short form</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --pretty=full-&gt;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --since= 2.days-&gt;&nbsp;<span style="color: red;">show tha past 2days working commit</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --pretty=format:"%h -- %an"</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Cat filename -&gt;&nbsp;<span style="color: red;">using this cat command we will check the data inside the file</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Typing nano gets you into the Nano editor in WSL</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Nano index.html -&gt;&nbsp;<span style="color: red;">open the nano editor</span></p>
+  <p style="margin: 0in 0in 0in 1.125in; font-family: Calibri; font-size: 14pt;">CTRL + O saves a Nano file</p>
+  <p style="margin: 0in 0in 0in 1.125in; font-family: Calibri; font-size: 14pt;">CTRL + X exits Nano</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --graph</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git log --graph --oneline</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git restore --staged filename-&gt;&nbsp;<span style="color: red;">Back the file in staging area</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git mergetool -t vimdiff -&gt;&nbsp;<span style="color: red;">Use this we will check the difference between our code if code have some quarry if merging time mistake are create.</span></p>
+  <p style="margin: 0in 0in 0in 1.125in; font-family: Calibri; font-size: 14pt;">Shift + :&nbsp; + wq&nbsp;&nbsp; -&gt;<span style="color: red;">&nbsp;to back the auditor</span></p>
+  <p style="margin: 0in 0in 0in 1.125in; font-family: Calibri; font-size: 14pt;">Shift&nbsp; + :&nbsp; + q</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Rm -f hello.py.orig-&gt;&nbsp;<span style="color: red;">remove this original file</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git rebase name-of-the-branch -&gt;<span style="color: red;">&nbsp;seem merged type only we will merged comment also with our branch</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git commit --amend-&gt;&nbsp;&nbsp;<span style="color: red;">opening one editor in this editor we can change and update the project changing the privies message and update a new message</span></p>
+  <p style="margin: 0in; font-family: Courier; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">mkdir project -&gt;&nbsp;<span style="color: red;">creating a project folder</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git stash -&gt;<span style="color: red;">&nbsp;Using this command we will store our data without add in staging area it will be hide the data</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">Git stash apply -&gt;&nbsp;<span style="color: red;">Using this command we will restore our hidden data</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt;">git remote remove origin -&gt;&nbsp;<span style="color: red;">using this command we are remove our existing remote directory</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">\\\\\\</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 14pt; color: red;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">If you have a local clone, you can update it by running the following commands.</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git branch -m master main</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git fetch origin</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git branch -u origin/main main</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git remote set-head origin -a</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><span style="font-weight: bold;">…or create a new repository on the command line</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">echo "# A-Simproble-Repository" &gt;&gt; README.md</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git init</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git add README.md</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git commit -m "first commit"</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git branch -M master</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git remote add origin&nbsp;<a href="https://github.com/GauravPant47/A-Simproble-Repository.git">https://github.com/GauravPant47/A-Simproble-Repository.git</a></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git push -u origin master</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">&nbsp;</p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;"><span style="font-weight: bold;">…or push an existing repository from the command line</span></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git remote add origin&nbsp;<a href="https://github.com/GauravPant47/A-Simproble-Repository.git">https://github.com/GauravPant47/A-Simproble-Repository.git</a></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git branch -M master</p>
+  <p style="margin: 0in; font-family: &quot;Times New Roman&quot;; font-size: 14pt;"></p>
+  <p style="margin: 0in; font-family: Calibri; font-size: 11pt;">git push -u origin master</p> 
+ </body>
+</html>

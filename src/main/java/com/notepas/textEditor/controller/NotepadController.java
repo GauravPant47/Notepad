@@ -1,6 +1,8 @@
 package com.notepas.textEditor.controller;
 
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 
 import java.util.List;
@@ -64,6 +66,27 @@ public class NotepadController {
 		notepadService.deleteFile(fileName);
 		return "redirect:/notepad/";
 	}
+	
+	@PostMapping("/open-editor")
+	public String openTextEditor(@RequestParam String fileName) {
+	    try {
+	        File fileToOpen = new File("files/" + fileName);
+	        Desktop desktop = Desktop.getDesktop();	
+
+	        if (desktop.isSupported(Desktop.Action.OPEN)) {
+	            desktop.open(fileToOpen);
+	        } else {
+	            // Handle the case where opening with the default application is not supported
+	            // You might want to provide a download link or an alternative way to view the file
+	            System.out.println("Opening with the default application is not supported on this platform.");
+	        }
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	        // Handle the exception as needed
+	    }
+	    return "redirect:/notepad/";
+	}
+
 
 	@PostMapping("/shutdown")
 	public void shutdownServer() {

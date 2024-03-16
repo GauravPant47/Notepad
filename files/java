@@ -1,0 +1,529 @@
+<html>
+ <head></head>
+ <body>
+  <div> 
+   <div> 
+    <div style="text-align: left;"> <font size="5" face="Garamond"><b>What is a java?&nbsp;</b></font> 
+    </div> 
+    <div> <font size="4" face="Garamond">Java is a programming language. It's used by software developers to write instructions that a computer can understand and execute. Java is known for its platform independence, which means that the programs written in Java can run on different types of devices without modification. It's widely used in various applications, from web development to mobile apps and large-scale enterprise systems. Java programs are often compiled into bytecode, which can be executed by a Java Virtual Machine (JVM) on different platforms.</font> 
+    </div> 
+    <div> <font size="3" face="Garamond"><br></font> 
+    </div> 
+   </div> 
+   <div> <span style="font-size: 18pt; font-weight: bold; font-family: Garamond;">Why Java is a platform-independent language?</span> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">Java is&nbsp;platform-independent&nbsp;</span><span style="font-size: 14pt; font-weight: bold;">because it uses a virtual machine</span><span style="font-size: 14pt;">. The Java programming language and all APIs are compiled into bytecodes. Bytecodes are effectively platform-independent. The virtual machine takes care of the differences between the bytecodes for the different platforms.</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 18pt; font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 18pt; font-weight: bold;">Why is java not a pure object-oriented programming language?</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">Java supports primitive data types - byte, boolean, char, short, int, float, long, and double and hence it is not a pure object-oriented.</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: x-large; font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: x-large; font-weight: bold;">Difference between Heap and Stack Memory in java?</span></font> 
+   </div> 
+   <table style="text-align: center; width: 1278.55px;"> 
+    <tbody> 
+     <tr>
+      <td>Property</td>
+      <td>Stack Memory</td>
+      <td>Heap Memory</td>
+     </tr> 
+     <tr>
+      <td>Size</td>
+      <td>The size of stack memory is smaller</td>
+      <td>The size of heap memory is larger</td>
+     </tr> 
+     <tr>
+      <td>Order</td>
+      <td>Stack memory is accessed in Last-In-First-Out (LIFO) order</td>
+      <td>Heap memory is dynamically allocated and does not follow any order</td>
+     </tr> 
+     <tr>
+      <td>Speed</td>
+      <td>Access to stack memory is faster because of Last-In-First-Out (LIFO) ordering</td>
+      <td>Access to heap memory is slower because it does not follow any order and is allocated dynamically</td>
+     </tr> 
+     <tr>
+      <td>Resizing</td>
+      <td>Resizing of variables is not allowed in stack</td>
+      <td>Resizing of variables is allowed in a heap</td>
+     </tr> 
+     <tr>
+      <td>Allocation</td>
+      <td>Memory is allocated and deallocated automatically when a method starts and completes its execution respectively</td>
+      <td>Memory is allocated when objects are created and deallocated by the garbage collector when they are no longer in use</td>
+     </tr> 
+     <tr>
+      <td>Storage</td>
+      <td>Primitive values specific to a method and object references from the method are stored in the stack</td>
+      <td>The newly created objects and the JRE classes are stored in heap</td>
+     </tr> 
+     <tr>
+      <td>Exception</td>
+      <td>StackOverflowError is thrown when there is no more space left in the stack for new method calls</td>
+      <td>OutOfMemoryError is thrown when there is no space left in a heap to allocate new objects</td>
+     </tr> 
+     <tr>
+      <td>Thread Safety</td>
+      <td>Each thread is allocated with a new stack, and it is thread-safe</td>
+      <td>Heap memory is shared across all threads, and it is not thread-safe</td>
+     </tr> 
+     <tr>
+      <td>Scope</td>
+      <td>Stack memory is used only by one thread of execution.</td>
+      <td>Heap memory is used by all the parts of the application.</td>
+     </tr> 
+     <tr>
+      <td>Lifetime</td>
+      <td>Stack memory is short lived.</td>
+      <td>Heap memory lives from the start till the end of application execution.</td>
+     </tr> 
+    </tbody> 
+   </table><font face="Garamond"><br><span style="font-size: 18pt; font-weight: bold;">Can we override static method in java?</span></font> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">No, you cannot override static method in java. You can only hide them.</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;"><br></span></font> 
+   </div> 
+   <div> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;">Can you overload main method in java?</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">Yes, you can overload main method in java but when you run your program, JVM will search for public static void main(String[] args) and execute that method.&nbsp;</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;">What is the base class for all the classes?</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">The super base class of all the Java classes is the java. lang. Object class.</span></font> 
+   </div> 
+   <div> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><font face="Garamond">&nbsp;</font></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;"><font face="Garamond">Can we override private methods in java?</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 14pt;"><font face="Garamond">You cannot override a private or static method in Java. If you create a similar method with same return type and same method arguments in child class then it will hide the super class method; this is known as method hiding. Similarly, you cannot override a private method in sub class because it's not accessible there.&nbsp;</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><font face="Garamond">&nbsp;</font></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="color: rgb(81, 81, 81); font-size: 18pt; font-weight: bold;"><font face="Garamond">What do you mean by data encapsulation?</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 14pt;"><font face="Garamond">Encapsulation is a mechanism through which we can wrap the data members and member methods of the class into a single unit which is called encapsulation.</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;"><font face="Garamond"><br></font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;"><font face="Garamond">Can you list down some of important method from object class?</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"><span style="font-size: 14pt;"><font face="Garamond">Important methods of object classes are:</font></span></p> 
+    <p lang="en-GB" style="margin: 0in; font-size: 14pt;"></p> 
+    <ol> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">hashcode: It returns hash value of the object&nbsp;</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">equals: It compares the object references&nbsp;</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">wait: It causes current thread to wait until notify or notifyAll is not called&nbsp;</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">notify: Wakes up single thread which is waiting for lock</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">notifyAll: Wakes up all threads which is waiting for lock</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">toString: Provides String representation of the object&nbsp;</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">clone: This method is used to clone the object&nbsp;</font></span></li> 
+     <li style="text-align: left;"><span style="font-size: 14pt;"><font face="Garamond">finalize: This method is called when object is being garbage collected</font></span></li> 
+    </ol> 
+    <div> <font face="Garamond"><br></font> 
+    </div> 
+    <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Which two methods should you override while putting the custom object as Key in HashMap?</font></span></font> 
+    </div> 
+    <div> <font face="Garamond"><span style="font-size: 14pt;">You need to override hashcode and equals method in custom class while putting objects of custom class in HashMap.</span><br></font> 
+    </div> 
+    <div> <font face="Garamond"><span style="font-size: 14pt;"><br></span></font> 
+    </div> 
+    <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">What is the difference between HashMap and HashSet in java?</font></span></font> 
+    </div> 
+    <p></p> 
+   </div> 
+   <table style="width: 1278.55px;"> 
+    <tbody> 
+     <tr>
+      <td>Parameter</td>
+      <td>HashMap</td>
+      <td>HashSet</td>
+     </tr> 
+     <tr>
+      <td>Interface</td>
+      <td>HashMap implements Map interface</td>
+      <td>HashSet implement Set interface</td>
+     </tr> 
+     <tr>
+      <td>Method for storing data</td>
+      <td>It stores data in a form of key-&gt;value pair.So it uses put(key,value) method for storing data</td>
+      <td>It uses add(value) method for storing data</td>
+     </tr> 
+     <tr>
+      <td>Duplicates</td>
+      <td>HashMap allows duplicate value but not duplicate keys</td>
+      <td>HashSet does not allow duplicate values.</td>
+     </tr> 
+     <tr>
+      <td>Performance</td>
+      <td>It is faster than hashset as values are stored with unique keys</td>
+      <td>It is slower than HashMap</td>
+     </tr> 
+     <tr>
+      <td>Hashcode Calculation</td>
+      <td>In hash map hashcode value is calculated using key object</td>
+      <td>In this, hashcode is calculated on the basis of value object. Hashcode can be same for two value object so we have to implement equals() method. If equals() method return false then two objects are different.</td>
+     </tr> 
+    </tbody> 
+   </table><font face="Garamond"><br></font> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Can we have an abstract class without having any abstract method in it?</font></span></font> 
+   </div> 
+   <div> <font face="Garamond">Yes, we can have an abstract class without Abstract Methods as both are independent concepts. Declaring a class abstract means that it cannot be instantiated on its own and can only be sub-classed. Declaring a method abstract means that the Method will be defined in the subclass.</font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Have you heard about transient variables? When will you use it?</font></span></font> 
+   </div> 
+   <div> <font face="Garamond">Transient is a variables modifier used in serialization. At the time of serialization, if we don't want to save the value of a particular variable in a file, then we use the transient keyword. When JVM comes across a transient keyword, it ignores the original value of the variable and saves the default value of that variable data type.<span style="font-weight: bold;">&nbsp;</span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Difference between throw and throws keywords in Java?</font></span></font> 
+   </div> 
+   <table style="text-align: center; width: 1279.64px;"> 
+    <tbody> 
+     <tr>
+      <td>Throw</td>
+      <td>Throws</td>
+     </tr> 
+     <tr>
+      <td>The throw keyword is used to throw an exception explicitly in the code, inside the function, or a block of code.</td>
+      <td>The throws keyword is used in the method signature to declare an exception which might be thrown by the function while executing code.</td>
+     </tr> 
+     <tr>
+      <td>The throw is used within the method.</td>
+      <td>Throws are used with the method signature.</td>
+     </tr> 
+     <tr>
+      <td>In throw, we are allowed to throw only one exception at a time.</td>
+      <td>In throws, we can declare multiple exceptions using throws that can be thrown by the method.</td>
+     </tr> 
+    </tbody> 
+   </table><font face="Garamond"><br></font> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Why Strings in java is immutable?</font></span><br></font> 
+   </div> 
+   <div> <font face="Garamond">A String object is likely to have one or many references.&nbsp;If several references point to the same String without even knowing it, it would be bad if one of the references modified that String value. That's why String objects are immutable.<span style="font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond">(<span style="font-weight: bold;">Second Ans)</span><br></font> 
+   </div> 
+   <div> <font face="Garamond">The string is immutable means that we cannot change the object itself, but we can change the reference to the object. The string is made final to not allow others to extend it and destroy its immutability.<span style="font-weight: bold;"><br></span></font> 
+   </div> 
+   <div> <font face="Garamond"><br></font> 
+   </div> 
+   <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Can we have a static method in the interface?</font></span><br></font> 
+   </div> 
+   <div> <font face="Garamond">you can have static methods in an interface (with body). You need to call them using the name of the interface, just like static methods of a class</font> 
+   </div> 
+   <div> <font face="Garamond"><br></font> 
+   </div> 
+   <div> <font face="Garamond"><font size="5"></font> 
+     <div> <span style="font-weight: bold;"><font size="5">What is the difference between StringBuffer and StringBuilder?</font></span> 
+      <br> 
+     </div></font> 
+   </div> 
+  </div> 
+  <table style="width: 1419.2px;"> 
+   <tbody> 
+    <tr>
+     <td>Sr. No.</td>
+     <td>Key</td>
+     <td>String Buffer</td>
+     <td>String Builder</td>
+    </tr> 
+    <tr>
+     <td>1</td>
+     <td>Basic</td>
+     <td>StringBuffer was introduced with the initial release of Java</td>
+     <td>It was introduced in Java 5</td>
+    </tr> 
+    <tr>
+     <td>2</td>
+     <td>Synchronized</td>
+     <td>It is synchronized</td>
+     <td>It is not synchronized</td>
+    </tr> 
+    <tr>
+     <td>3</td>
+     <td>Performance</td>
+     <td>It is thread-safe. So, multiple threads can’t access at the same time, therefore, it is slow.</td>
+     <td>It is not thread-safe hence faster than String Buffer</td>
+    </tr> 
+    <tr>
+     <td>4</td>
+     <td>Mutable</td>
+     <td>It is mutable. We can modify string without creating an object</td>
+     <td>It is also mutable</td>
+    </tr> 
+    <tr>
+     <td>5</td>
+     <td>Storage</td>
+     <td>Heap</td>
+     <td>Heap</td>
+    </tr> 
+   </tbody> 
+  </table><font face="Garamond"><br></font> 
+  <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">Can you declare the constructor as final?</font></span></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="4">No, we cannot make constructors as final in java.</font></font> 
+  </div> 
+  <div> <font face="Garamond"><span style="font-weight: bold;"><br></span></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="5"><span style="font-weight: bold;">Difference between this() and super() in Java?</span><span style="font-weight: bold;">&nbsp;</span></font><br></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="4">The this() in the constructor refers to the current class object. The super() in the constructor refers immediate parent class object.&nbsp;</font><span style="font-weight: bold;"><br></span></font> 
+  </div> 
+  <div> <font face="Garamond"><br></font> 
+  </div> 
+  <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">What is volatile in java?</font></span><br></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="4">For Java, “volatile” tells the compiler that the value of a variable must never be cached as its value may change outside of the scope of the program itself.</font></font> 
+  </div> 
+  <div> <font face="Garamond"><br></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="5"><span style="font-weight: bold;">What are two different ways to call a garbage collector?</span>&nbsp;</font><span style="font-weight: bold;"><br></span></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="3">There are 2 ways to call the garbage collector in java<br></font></font> 
+  </div> 
+  <div> <font size="4"><font face="Garamond">You can use the Runtime. getRuntime(). gc() method- This class allows the program to interface with the Java Virtual machine. The “gc()” method allows us to call the garbage collector</font></font> 
+  </div> 
+  <div> <font size="4" face="Garamond">method. You can also use the System. gc() method which is common.&nbsp;</font> 
+  </div> 
+  <div> <font face="Garamond"><font size="3"><br></font></font> 
+  </div> 
+  <div></div> 
+  <div> <font face="Garamond"><font size="5"><span style="font-weight: bold;">How many objects will be created below:&nbsp;</span></font></font> 
+  </div> 
+  <div> <font face="Garamond"><font size="5"><span style="font-weight: bold;">String str1= new String("John");&nbsp;</span></font></font> 
+  </div> 
+  <div> <font face="Garamond"><span style="font-weight: bold;"><font size="5">String str2= new String("John");</font></span></font> 
+  </div> 
+  <div> <font size="4" face="Garamond">Though we are creating 2 instances, in the memory of String Pool we will have only one instance of it create with 2 references pointing to it in Constant Pool</font><span style="font-size: 18pt; font-weight: bold; color: rgb(81, 81, 81); font-family: &quot;Times New Roman&quot;;"><br></span> 
+  </div> 
+  <div> <font size="4" face="Garamond"><br></font> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">Can you differentiate between a Checked Exception and an Unchecked exception?</font></span><font size="4" face="Garamond"><br></font> 
+  </div> 
+  <div> <font size="4">A checked exception is caught at compile time whereas a runtime or unchecked exception is, as it states, at runtime. A checked exception must be handled either by re-throwing or with a try-catch block, whereas an unchecked isn't required to be handled.</font><span style="font-weight: bold;"><br></span> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div> 
+   <br> 
+  </div><span style="font-weight: bold;"><font size="5">What is the difference between ArrayList and LinkedList? How will you decide which one you need to use?&nbsp;</font></span> 
+  <br> 
+  <table style="width: 1419.2px;"> 
+   <tbody> 
+    <tr>
+     <td>ArrayList</td>
+     <td>LinkedList</td>
+    </tr> 
+    <tr>
+     <td>1) ArrayList internally uses a dynamic array to store the elements.</td>
+     <td>LinkedList internally uses a doubly LinkedList to store the elements.</td>
+    </tr> 
+    <tr>
+     <td>2) Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the other elements are shifted in memory.</td>
+     <td>Manipulation with LinkedList is faster than ArrayList because it uses a doubly linkedlist, so no bit shifting is required in memory.</td>
+    </tr> 
+    <tr>
+     <td>3) An ArrayList class can act as a list only because it implements List only.</td>
+     <td>LinkedList class can act as a list and queue both because it implements List and Deque interfaces.</td>
+    </tr> 
+    <tr>
+     <td>4) ArrayList is better for storing and accessing data.</td>
+     <td>LinkedList is better for manipulating data.</td>
+    </tr> 
+    <tr>
+     <td>5) The memory location for the elements of an ArrayList is contiguous.</td>
+     <td>The location for the elements of a linkedlist is not contagious.</td>
+    </tr> 
+    <tr>
+     <td>6) Generally, when an ArrayList is initialized, a default capacity of 10 is assigned to the ArrayList.</td>
+     <td>There is no case of default capacity in a LinkedList. In LinkedList, an empty list is created when a LinkedList is initialized.</td>
+    </tr> 
+    <tr>
+     <td>7) To be precise, an ArrayList is a resizable array.</td>
+     <td>LinkedList implements the doubly linkedlist of the list interface.</td>
+    </tr> 
+   </tbody> 
+  </table> 
+  <br> 
+  <div> <span style="font-weight: bold;"><font size="5">You have started three threads from main threads. You need to make sure main thread complete last. How will you do it?&nbsp;</font></span> 
+   <br> 
+  </div> 
+  <div> <font size="4">Using join method:</font><span style="font-weight: bold;"><br></span> 
+  </div> 
+  <div> 
+   <br> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">What do you mean by Platform independence of java?</font></span> 
+  </div> 
+  <div> <font size="4">You can write and compile program in one Operating system and run in other operating system.</font> 
+  </div> 
+  <div> <font size="4"><span style="font-weight: bold;">For example:&nbsp;</span></font> 
+  </div> 
+  <div> <font size="4">You can compile program in Windows and can run it in Unix.<span style="font-weight: bold;">&nbsp;</span></font> 
+   <br> 
+  </div> 
+  <div> <font size="4"><span style="font-weight: bold;"><br></span></font> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">What is difference between JVM, JRE and JDK ?</font></span> 
+  </div> 
+  <div> <span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt; font-weight: bold;">JDK-&gt;</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;JDK stands for a java development kit, it internally contains JRE &amp; JVM. JDK provides all the tools to work with the JAVA language.</span> 
+  </div> 
+  <div> <span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt; font-weight: bold;">JRE-&gt;</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;JRE stands for Java runtime environment, it provides an environment to execute the java program. It internally&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">Contains JVM which is responsible to execute a java program.</span> 
+  </div> 
+  <div> <span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt; font-weight: bold;">JVM-&gt;</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;">&nbsp;JVM stands for Java Virtual Machine. It is virtual machine which actually runs the byte code.</span> 
+  </div> 
+  <div> <span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;"><br></span> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">What are memory areas allocated in JVM?&nbsp;</font></span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14pt;"><br></span> 
+  </div> 
+  <div> <font size="4">Memory areas allocated in JVM are:&nbsp;</font> 
+  </div> 
+  <div> 
+   <ol> 
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="4">Heap area&nbsp;</font></span></li> 
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="4">Method area&nbsp;</font></span></li> 
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="4">JVM language stacks&nbsp;</font></span></li> 
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="4">Program counter (PC) register&nbsp;</font></span></li> 
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="4">Native method stacks</font></span></li> 
+   </ol> 
+   <div> <span style="font-weight: bold;"><font size="5">What is Oops in java?&nbsp;</font></span><font face="Times New Roman" size="4"><br></font> 
+   </div> 
+   <div> <font size="4">Oops in java is to improve code readability and reusability by defining a Java program efficiently. The main principles of object-oriented programming are abstraction, encapsulation, inheritance, and</font> 
+   </div> 
+   <div> <font size="4">polymorphism. These concepts aim to implement real-world entities in programs.</font><span style="font-weight: bold;"><font size="5"><br></font></span> 
+   </div> 
+   <div> <font size="4"><br></font> 
+   </div> 
+   <div> <span style="font-weight: bold;"><font size="5">What is Abstraction?</font></span><font size="4"><br></font> 
+   </div> 
+   <div> <font size="4">Data abstraction is the process of hiding certain details and showing only essential information to the user. Abstraction can be achieved with either abstract classes or interfaces</font><span style="font-weight: bold;"><font size="5"><br></font></span> 
+   </div> 
+   <div> <font size="4"><br></font> 
+   </div> 
+   <div> <span style="font-weight: bold;"><font size="5">What is Encapsulation?&nbsp;</font></span><font size="4"><br></font> 
+   </div> 
+   <div> <font size="4">Encapsulation is a mechanism through which we can wrap the data members and member methods of the class into a single unit which is called encapsulation.</font> 
+   </div> 
+   <div> <font size="4"><br></font> 
+   </div> 
+   <div> <span style="font-weight: bold;"><font size="5">What is Polymorphism in java?&nbsp;</font></span><font size="4"><br></font> 
+   </div> 
+   <div> 
+    <div style="font-size: large;">
+      Polymorphism is a Greek word whose meaning is the same object having different behaviour. 
+    </div> 
+    <div style="font-size: large;">
+      And&nbsp; 
+    </div> 
+    <div style="font-size: large;">
+      Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance. is a two types&nbsp; 
+    </div> 
+    <div> 
+     <ol style="font-size: large;"> 
+      <li>Compile time polymorphism</li> 
+      <li>Runtime polymorphism</li> 
+     </ol> 
+     <div> 
+      <div> <font size="5"><b>What is Inheritance in java?&nbsp;</b></font> 
+      </div> 
+      <div> <font size="4">When we construct a new class from an existing class in such a way that the new class access all the features &amp; properties of an existing class called inheritance.</font> 
+      </div> 
+      <div> <font size="4">Note:-</font> 
+      </div> 
+      <div> 
+       <ol> 
+        <li><span style="font-size: large;">In java extends keyword is used to perform inheritance.</span></li> 
+        <li><span style="font-size: large;">It provides code reusability.</span></li> 
+        <li><span style="font-size: large;">We can’t access private members of class through inheritance.</span></li> 
+        <li><span style="font-size: large;">A subclass contains all the features of a super class so, we should create the object of the subclass.</span></li> 
+        <li><span style="font-size: large;">Method overriding is only possible through inheritance.</span></li> 
+       </ol> 
+      </div> 
+      <div> <font size="4">Second :</font> 
+      </div> 
+      <div> <font size="4">Inheritance is a mechanism wherein a new class is derived from an existing class. In Java, classes may inherit or acquire the properties and methods of other classes. A class derived from another class is called a subclass, whereas the class from which a subclass is derived is called a superclass&nbsp;</font> 
+      </div> 
+      <div> 
+       <br><span style="font-size: x-large; font-weight: 700;">What is the difference between Class and Objects in Java?</span> 
+       <br> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <table style="width: 1419.2px;"> 
+   <tbody> 
+    <tr>
+     <td>No.</td>
+     <td>Object</td>
+     <td>Class</td>
+    </tr> 
+    <tr>
+     <td>1.</td>
+     <td>Object is an instance of a class.</td>
+     <td>Class is a blueprint or template from which objects are created.</td>
+    </tr> 
+    <tr>
+     <td>2.</td>
+     <td>Object is a real world entity such as pen, laptop, mobile, bed, keyboard, mouse, chair etc.</td>
+     <td>Class is a group of similar objects.</td>
+    </tr> 
+    <tr>
+     <td>3.</td>
+     <td>Object is a physical entity.</td>
+     <td>Class is a logical entity.</td>
+    </tr> 
+    <tr>
+     <td>4.</td>
+     <td>Object is created through new keyword mainly e.g. Student s1=new Student();</td>
+     <td>Class is declared using class keyword e.g. class Student{}</td>
+    </tr> 
+    <tr>
+     <td>5.</td>
+     <td>Object is created many times as per requirement.</td>
+     <td>Class is declared once.</td>
+    </tr> 
+    <tr>
+     <td>6.</td>
+     <td>Object allocates memory when it is created.</td>
+     <td>Class doesn't allocated memory when it is created.</td>
+    </tr> 
+    <tr>
+     <td>7.</td>
+     <td>There are many ways to create object in java such as new keyword, new Instance() method, clone() method, factory method and deserialization.</td>
+     <td>There is only one way to define class in java using class keyword</td>
+    </tr> 
+   </tbody> 
+  </table> 
+  <br> 
+  <div> <span style="font-weight: bold;"><font size="5">What is Constructor in java?&nbsp;</font></span> 
+   <br> 
+  </div> 
+  <div> 
+   <div> <font size="4">A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created. constructors can be divided into 3 types: No- Arg Constructor. Parameterized Constructor. Default Constructor</font> 
+   </div> 
+   <div> <font size="4">Second :</font> 
+   </div> 
+   <div> <font size="4">A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.</font> 
+   </div> 
+  </div> 
+  <div> <font size="4"><br></font> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">Why main() in java is declared as public static void main? What if the main method is declared as&nbsp;private?</font></span> 
+  </div> 
+  <div> <font size="4">Since the main method in Java is not supposed to return any value, it's made void which simply means main is not returning anything. Summary: 1. The main method must be declared public, static and void in Java otherwise, JVM will not able to run Java program.</font> 
+  </div> 
+  <div> <span style="font-weight: bold;"><br></span> 
+  </div> 
+  <div> <span style="font-weight: bold;"><font size="5">What is an immutable object in java?</font></span> 
+  </div> 
+  <div> <span style="font-family: &quot;Times New Roman&quot;;"><font size="4">The immutable objects are objects whose value cannot be changed after initialization. We cannot change anything once the object is created. For example, primitive objects such as int, long, float, double, all legacy.</font></span> 
+  </div> 
+  <div> <font size="4"><span style="font-family: &quot;Times New Roman&quot;;">classes, Wrapper class, String class, etc. In a nutshell, immutable means unmodified or unchangeable.</span><span style="font-weight: bold;">&nbsp;</span></font> 
+  </div> 
+ </body>
+</html>

@@ -1,0 +1,412 @@
+<html>
+ <head></head>
+ <body>
+  <span style="color: rgb(63, 63, 63); font-family: &quot;Times New Roman&quot;; font-size: x-large; font-weight: bold;">What is MySQL explain?</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">MySQL is&nbsp;a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL). A database is a structured collection of data. It may be anything from a simple shopping list to a picture gallery or a place to hold the vast amounts of information in a corporate network.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">&nbsp;</span>
+  <br><span style="color: rgb(63, 63, 63); font-family: &quot;Times New Roman&quot;; font-size: x-large; font-weight: bold;">What are some of the advantages of using MySQL?</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">1. Data Protection</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">It is one of the most popular database management systems in terms of security and dependability. It is used in many web applications, including Twitter, Facebook, Joomla, Drupal, and WordPress.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">2. Scalability on Demand</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">This platform’s incredible scalability can help with the management of embedded applications.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">The benefit of this open-source platform is that it allows for complete customization, which is very useful if you have an eCommerce store to manage.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">3. High Efficiency</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">MySQL includes a unique storage engine that makes it easier to administer your system.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">4. 24/7 Uptime</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">The MySQL system is unique in that it assures continuous uptime. Aside from that, it provides a plethora of options, such as slave/master replication settings and unique cluster servers.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">5. Outstanding Transactional Support</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">MySQL is at the top of the list of fast transactional database solutions available today. It has several features, such as consistent and automated transaction support. Aside from that, it is one of the greatest options for complete data integrity.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">6. Excellent Workflow Control</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">You don’t need to set aside much time to set up this program because downloading and installation take less than 30 minutes. You may take use of the advantages of this fantastic solution regardless of your platform. It may be used to automate a wide range of processes, including database management, data design, and space growth.</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">7. Lower Total Ownership Cost</span>
+  <br><span style="font-family: &quot;Times New Roman&quot;; font-size: large;">You may save a lot of money if you convert your existing database programs to this platform. The simplicity of management and dependability might aid in troubleshooting. As a result, you will not experience any downtime or performance difficulties.</span>
+  <br>
+  <ul style="margin-left: 0.4416in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; font-size: large; color: rgb(63, 63, 63); font-weight: bold;"><br></span></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What do you mean by ‘database’?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">A database is&nbsp;information that is set up for easy access, management and updating. Computer databases typically store aggregations of data records or files that contain information, such as sales transactions, customer data, financials and product information.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; font-size: large; color: rgb(63, 63, 63); font-weight: bold;"><br></span></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What does SQL in MySQL stand for?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">The SQL part of “MySQL” stands for “Structured Query Language”. SQL is the most common standardized language used to access databases.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you interact with database?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Interacting with the Database</font></p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Store the results of a SQL statement that returns a single row into local variables.</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Create a “cursor” that allows the stored program to iterate through the rows returned by a SQL statement.</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Execute a SQL statement, returning the result set(s) to the calling program.</font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the different types of statements in MySQL?</font></span></p>
+   <ol type="1" style="margin-left: 0in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-weight: bold;">
+    <ul>
+     <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DDL (Data Definitio Language)</font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DML (Data manipulation language)</font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DQL (Data query language)</font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DCL (Data control language)</font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">TCL (Transaction control language)</font></li>
+    </ul>
+   </ol>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are some of the common MySQL commands?</font></span></p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">SELECT&nbsp;- extracts data from a database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">UPDATE&nbsp;- updates data in a database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DELETE&nbsp;- deletes data from a database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">INSERT INTO&nbsp;- inserts new data into a database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CREATE DATABASE&nbsp;- creates a new database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">ALTER DATABASE&nbsp;- modifies a database</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CREATE TABLE&nbsp;- creates a new table</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">ALTER TABLE&nbsp;- modifies a table</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DROP TABLE&nbsp;- deletes a table</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CREATE INDEX&nbsp;- creates an index (search key)</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">DROP INDEX&nbsp;- deletes an index</font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you create a database in MySQL?</font></span></p>
+   <ol type="1" style="margin-left: 0in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-weight: bold;">
+    <ul>
+     <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CREATE DATABASE — creates a new database</font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CREATE DATABASE databasename;</font></li>
+    </ul>
+   </ol>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you create a table using MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">CREATE TABLE table_name (</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">column_1 datatype,</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">column_2 datatype,</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">column_3 datatype</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">);</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you Insert Data Into MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in 0in 0in 0.375in;"><font face="Times New Roman" size="4">INSERT INTO — inserts new data into a database</font></p>
+   <p lang="en-GB" style="margin: 0in 0in 0in 0.375in;"><font face="Times New Roman" size="4">INSERT INTO table_name&nbsp; VALUES(column_1, column_2, column_3);</font></p>
+   <p lang="en-GB" style="margin: 0in 0in 0in 0.375in;"><font face="Times New Roman" size="4">INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, ‘value_2’, value_3);</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you remove a column from a database?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">ALTER TABLE table_name DROP COLUMN column_name;</font></p>
+   <p style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How to create an Index in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">CREATE INDEX index_name ON table_name (column_name);</font></p>
+   <p style="margin: 0in; color: rgb(89, 89, 89);"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p style="margin: 0in;"><font size="5"><font face="Times New Roman">&nbsp;</font><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;">How to Delete Data From a MySQL Table?</span></font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">DELETE FROM table_name WHERE condition;</font></p>
+   <p style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you view a database in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">SHOW DATABASES;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the Numeric Data Types in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">MySQL supports all standard SQL numeric data types. These types include the exact numeric data types ( INTEGER , SMALL INT , DECIMAL , and NUMERIC ), as well as the approximate numeric data types ( FLOAT , REAL , and DOUBLE PRECISION ).</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the String Data Types in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">The string data types are CHAR , VARCHAR , BINARY ,varbinary , BLOB , TEXT , ENUM , and SET .</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the Date and Time based Data Types in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">The DATETIME type is used for values that contain both date and time parts. MySQL retrieves and displays DATETIME values in ' YYYY-MM-DD hh:mm:ss ' format. The supported range is '1000-01-01 00:00:00' to '9999-12-31 23:59:59' . The TIMESTAMP data type is used for values that contain both date and time parts.</font></p>
+   <div style="direction: ltr;">
+    <table border="1" cellpadding="0" cellspacing="0" valign="top" style="width: 1413.21px; direction: ltr; border-style: solid; border-color: rgb(163, 163, 163); border-width: 1pt;">
+     <tbody>
+      <tr>
+       <td>Data type</td>
+       <td>Format</td>
+       <td>User-defined fractional second precision</td>
+      </tr>
+      <tr>
+       <td>time</td>
+       <td>hh:mm:ss[.nnnnnnn]</td>
+       <td>Yes</td>
+      </tr>
+      <tr>
+       <td>date</td>
+       <td>YYYY-MM-DD</td>
+       <td>No</td>
+      </tr>
+      <tr>
+       <td>smalldatetime</td>
+       <td>YYYY-MM-DD hh:mm:ss</td>
+       <td>No</td>
+      </tr>
+      <tr>
+       <td>date time</td>
+       <td>YYYY-MM-DD hh:mm:ss[.nnn]</td>
+       <td>No</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <p lang="en-GB" style="margin: 0in;">&nbsp;</p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are “Views” in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">MySQL Views</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">In SQL, a view is a virtual table based on the result-set of an SQL statement. A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How do you create and execute views in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">CREATE VIEW view_name AS SELECT column1, column2, … FROM table_name WHERE condition;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">CREATE VIEW [db_name.] view_name [(column_list)] AS select-statement;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What is a Database?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">A database is a container where data can be collected systematically. managing and manipulation of those data are easy.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are Triggers in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">A MySQL trigger is a stored program (with queries) which is executed automatically to respond to a specific event such as insertion, updation or deletion occurring in a table.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">How many Triggers are possible in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Six Triggers are possible in MySQL</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the types of relationships used in MySQL?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">There are 3 different types of relations in the database:</font></p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">one-to-one</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">one-to-many, and</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">many-to-many</font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are the different features of an RDBMS?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">RDBMS supports more than one user at a time.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">There are multiple layers of security in RDBMS.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">RDBMS is used to handle huge sums of data.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Data in RDBMS is stored in the form of tables.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">Explain the E-R Model?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Entity relationship (ER) models are based on the real-world entities and their relationships. It is easy for the developers to understand the system by simply looking at the ER diagram. ER models are normally represented by ER-diagrams. ER diagram basically having three components:</font></p>
+   <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+    <li style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4"><span lang="en-GB">&nbsp;Entities&nbsp;</span><span lang="x-IV_mathan">−</span><span lang="x-IV_mathan">&nbsp;It is a real-world thing which can be a person, place, or even a concept. For Example: Department, Admin, Courses, Teachers, Students, Building, etc are some of the entities of a School Management System.</span></font></li>
+    <li style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4"><span lang="en-GB">&nbsp;Attributes&nbsp;</span><span lang="x-IV_mathan">−</span><span lang="x-IV_mathan">&nbsp;An entity which contains a real-world property called an attribute. For Example: The entity employee has the property like employee id, salary, age, etc.</span></font></li>
+    <li style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4"><span lang="en-GB">Relationship&nbsp;</span><span lang="x-IV_mathan">−</span><span lang="x-IV_mathan">&nbsp;Relationship tells how two attributes are related. For Example: Employee works for a department</span></font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">Define the object-oriented model?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">In Object Oriented Data Model, data and their relationships are contained in a single structure which is referred as object in this data model. In this, real world problems are represented as objects with different attributes. All objects have multiple relationships between them.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">● Objects –</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">An object is an abstraction of a real world entity or we can say it is an instance of class. Objects encapsulates data and code into a single unit which provide data abstraction by hiding the implementation details from the user. For example: Instances of student, doctor, engineer in above figure.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">● Attribute –</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">An attribute describes the properties of object. For example: Object is STUDENT and its attribute are Roll no, Branch, Setmarks() in the Student class.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">● Methods –</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Method represents the behavior of an object. Basically, it represents the real-world action. For example: Finding a STUDENT marks in above figure as Setmarks().</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">● Class –</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">A class is a collection of similar objects with shared structure i.e. attributes and behavior i.e. methods. An object is an instance of class. For example: Person, Student, Doctor, Engineer in above figure.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">● Inheritance –</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">By using inheritance, new class can inherit the attributes and methods of the old class i.e. base class. For example: as classes Student, Doctor and Engineer are inherited from the base class Person.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">Explain three levels of data abstraction.</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">There are mainly three levels of data abstraction and we divide it into three levels in order to achieve Data Independence.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">1. View Level</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">2. Conceptual Level or Logical Level</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">3. Physical Level</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">(1) Physical Level (Lowest Level) – It describes how the data is actually stored in the storage medium.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">(2) Logical Level (Next Higher Level) – It describes what data are stored in the database.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">(3) View Level (Highest level) – It is closest to the users. It is concerned with the way in which the individual users view the data</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What is normalization? and what explains different normalization forms?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Normalization is the process of minimizing redundancy from a relation or set of relations. Redundancy in relation may cause insertion, deletion, and update anomalies. So, it helps to minimize the redundancy in relations. Normal forms are used to eliminate or reduce redundancy in database tables.</font></p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">1NF: A relation is in 1NF if all its attributes have an atomic value.</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">2NF: A relation is in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the candidate key in DBMS.</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">3NF: A relation is in 3NF if it is in 2NF and there is no transitive dependency.</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">BCNF: A relation is in BCNF if it is in 3NF and for every Functional Dependency, LHS is the super key. To understand the above-mentioned normal forms, we first need to have an understanding of the functional dependencies.</font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">Define primary key, foreign key, candidate key, super key?</font></span></p>
+   <p style="margin: 0in;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Primary key</span>&nbsp;</p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">It is the first key used to identify one and only one instance of an entity uniquely. An entity can contain multiple keys, as we saw in the PERSON table. The key which is most suitable from those lists becomes a primary key.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">In the EMPLOYEE table, ID can be the primary key since it is unique for each employee. In the EMPLOYEE table, we can even select License Number and Passport Number as primary keys since they are also unique.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">For each entity, the primary key selection is based on requirements and developers.&nbsp;</font></li>
+   </ul>
+   <p style="margin-top: 16pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Candidate key</span>&nbsp;</p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">A candidate key is an attribute or set of attributes that can uniquely identify a tuple.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Except for the primary key, the remaining attributes are considered a candidate key. The candidate keys are as strong as the primary key.&nbsp;</font></li>
+   </ul>
+   <p style="margin-top: 16pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Super Key</span>&nbsp;</p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Super key is an attribute set that can uniquely identify a tuple. A super key is a superset of a candidate key.&nbsp;</font></li>
+   </ul>
+   <p style="margin-top: 14pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Foreign key</span></p>
+   <ul>
+    <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Foreign keys are the column of the table used to point to the primary key of another table.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Every employee works in a specific department in a company, and employee and department are two different entities. So we can't store the department's information in the employee table. That's why we link these two tables through the primary key of one table.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">We add the primary key of the DEPARTMENT table, Department_Id, as a new attribute in the EMPLOYEE table.&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">In the EMPLOYEE table, Department_Id is the foreign key, and both the tables are related.&nbsp;</font></li>
+   </ul>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-family: &quot;Times New Roman&quot;; font-weight: bold;"><font size="5">What is a different type of indexes?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Index architectures are classified as clustered or non-clustered. Clustered indexes are indexes whose order of the rows in the data pages corresponds to the order of the rows in the index. This order is why only one clustered index can exist in any table, whereas, many non-clustered indexes can exist in the table. In some database systems, the leaf node of the clustered index corresponds to the actual data, not a pointer to data that is found elsewhere.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are DDL and DML languages?</font></span></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-weight: bold;"><font face="Times New Roman" size="4">DDL</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">DDL is Data Definition Language and is used to define the structures like schema, database, tables, constraints etc. Examples of DDL are create and alter statements.</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-weight: bold;"><font face="Times New Roman" size="4">DML</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">DML is Data Manipulation Language and is used to manipulate data. Examples of DML are insert, update and delete statements.</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Following are the important differences between DDL and DML.</font></p>
+   <div style="direction: ltr;">
+    <table border="1" cellpadding="0" cellspacing="0" valign="top" style="width: 1413.21px; direction: ltr; border-style: solid; border-color: rgb(163, 163, 163); border-width: 1pt;">
+     <tbody>
+      <tr>
+       <td>Sr. No.</td>
+       <td>Key</td>
+       <td>DDL</td>
+       <td>DML</td>
+      </tr>
+      <tr>
+       <td>1</td>
+       <td>Stands for</td>
+       <td>DDL stands for Data Definition Language.</td>
+       <td>DML stands for Data Manipulation Language.</td>
+      </tr>
+      <tr>
+       <td>2</td>
+       <td>Usage</td>
+       <td>DDL statements are used to create database, schema, constraints, users, tables etc.</td>
+       <td>DML statement is used to insert, update or delete the records.</td>
+      </tr>
+      <tr>
+       <td>3</td>
+       <td>Classification</td>
+       <td>DDL has no further classification.</td>
+       <td>DML is further classified into procedural DML and non-procedural DML.</td>
+      </tr>
+      <tr>
+       <td>4</td>
+       <td>Commands</td>
+       <td>CREATE, DROP, RENAME and ALTER.</td>
+       <td>INSERT, UPDATE and DELETE.</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <p style="margin: 0in; color: rgb(89, 89, 89);"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><font face="Times New Roman" size="4">&nbsp;</font><span style="font-family: &quot;Times New Roman&quot;; font-weight: bold;"><font size="5">What is the difference between DELETE and TRUNCATE statement?&nbsp;</font></span></p>
+   <div style="direction: ltr;">
+    <table border="1" cellpadding="0" cellspacing="0" valign="top" style="width: 1413.21px; direction: ltr; border-style: solid; border-color: rgb(163, 163, 163); border-width: 1pt;">
+     <tbody>
+      <tr>
+       <td>Delete</td>
+       <td>Truncate</td>
+      </tr>
+      <tr>
+       <td>The DELETE command is used to delete specified rows(one or more).</td>
+       <td>While this command is used to delete all the rows from a table.</td>
+      </tr>
+      <tr>
+       <td>It is a DML(Data Manipulation Language) command.</td>
+       <td>While it is a DDL(Data Definition Language) command.</td>
+      </tr>
+      <tr>
+       <td>There may be a WHERE clause in the DELETE command in order to filter the records.</td>
+       <td>While there may not be WHERE clause in the TRUNCATE command.</td>
+      </tr>
+      <tr>
+       <td>In the DELETE command, a tuple is locked before removing it.</td>
+       <td>While in this command, the data page is locked before removing the table data.</td>
+      </tr>
+      <tr>
+       <td>The DELETE statement removes rows one at a time and records an entry in the transaction log for each deleted row.</td>
+       <td>TRUNCATE TABLE removes the data by deallocating the data pages used to store the table data and records only the page deallocations in the transaction log.</td>
+      </tr>
+      <tr>
+       <td>DELETE command is slower than TRUNCATE command.</td>
+       <td>While the TRUNCATE command is faster than the DELETE command.</td>
+      </tr>
+      <tr>
+       <td>To use Delete you need DELETE permission on the table.</td>
+       <td>To use Truncate on a table we need at least ALTER permission on the table.</td>
+      </tr>
+      <tr>
+       <td>The identity of the fewer column retains the identity after using DELETE Statement on the table.</td>
+       <td>Identity the column is reset to its seed value if the table contains an identity column.</td>
+      </tr>
+      <tr>
+       <td>The delete can be used with indexed views.</td>
+       <td>Truncate cannot be used with indexed views.</td>
+      </tr>
+      <tr>
+       <td>This command can also active trigger.</td>
+       <td>This command does not active trigger.</td>
+      </tr>
+      <tr>
+       <td>DELETE statement occupies more transaction spaces than Truncate.</td>
+       <td>Truncate statement occupies less transaction spaces than DELETE.</td>
+      </tr>
+     </tbody>
+    </table>
+   </div>
+   <p style="margin: 0in;">&nbsp;</p>
+   <p style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">Why do we use CASE Statement in SQL? Give example</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">We display the gender as ‘Male’ when the gender column in the employee table has value as ‘M’. And if the gender column has value as ‘F’ then we display the value as ‘Female’. If the gender column has values anything other than M or F then the query would return ‘Other’&nbsp;</font></p>
+   <ul type="disc" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">Select case when gender = ‘M’ then ‘Male&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">when gender = ‘F’ then ‘Female’&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">else ‘other’&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">end as gender&nbsp;</font></li>
+    <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">From employee</font></li>
+   </ul>
+   <p style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p style="margin: 0in;"><font size="5"><font face="Times New Roman">&nbsp;</font><span style="color: rgb(63, 63, 63); font-family: &quot;Times New Roman&quot;; font-weight: bold;">What is the difference between LEFT, RIGHT, FULL outer join and INNER join?</span></font></p>
+   <ol type="1" style="margin-left: 0in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in; font-weight: bold;">
+    <ul>
+     <li value="1" lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">INNER JOIN<span style="font-weight: normal;">&nbsp;will fetch only those records which are present in both the joined tables.</span></font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">LEFT JOIN<span style="font-weight: normal;">&nbsp;will fetch all records from the left table (table placed on the left side during the join) even if those records are not present in right table</span></font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">FULL JOIN<span style="font-weight: normal;">&nbsp;will fetch all records from both left and right table</span></font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">SELF JOIN<span style="font-weight: normal;">&nbsp;is when you join a table to itself.</span></font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">NATURAL JOIN<span style="font-weight: normal;">&nbsp;is similar to INNER join but we do not need to use the ON clause during the join.&nbsp;</span></font></li>
+     <li lang="en-GB" style="text-align: left; margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="4">CROSS JOIN<span style="font-weight: normal;">&nbsp;will join all the records from left table with all the records from right table.</span></font></li>
+    </ul>
+   </ol>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What is the difference between DISTINCT and GROUP BY?</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4"><span style="font-weight: bold;">DISTINCT</span>&nbsp;clause will return unique column values.&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in 0in 0in 0.375in;"><span style="font-weight: bold;"><font face="Times New Roman" size="4">SELECT DISTINCT name FROM employee;&nbsp;</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4"><span style="font-weight: bold;">GROUP BY</span>&nbsp;clause will group together the data based on the columns specified in group by.&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-weight: bold;"><font face="Times New Roman" size="4">SELECT name, COUNT(1) FROM employee GROUP BY name;</font></span></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-family: &quot;Times New Roman&quot;; font-weight: bold;"><font size="5">What are the rules to follow when using UNION operator?&nbsp;</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">•UNION operator can be used to combine two different SQL Queries. The output would be the result combined from both these queries. Duplicate records would not be returned.&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">•You can combine two queries using UNION operator if they follow the below rules:</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">•Both queries must return same same no of columns.&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">•The columns in both the queries must be in same order.&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">•Data type of all the columns in both the queries must be same.</font></p>
+   <p style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p style="margin: 0in;"><span style="font-family: &quot;Times New Roman&quot;; color: rgb(63, 63, 63); font-weight: bold;"><font size="5">What are aggregate functions? Name and explain different types of aggregate functions in SQL?&nbsp;</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Aggregate function can be used to perform calculation on a set of values, which will then return a single value. We can use aggregate function either with GROUP BY clause or without it.&nbsp; Find the sum of all the salaries from the entire employee&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-weight: bold;"><font face="Times New Roman" size="4">SELECT SUM(salary) as total_salary FROM employee;&nbsp;</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">Query will return the sum of salaries for each department in the employee table:</font></p>
+   <p lang="en-GB" style="margin: 0in;"><span style="font-weight: bold;"><font face="Times New Roman" size="4">SELECT dept_id, SUM(salary) as total_salary_per_dept</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-weight: bold;"><font face="Times New Roman" size="4">AVG: Calculate the average from the given set of values.&nbsp;</font></span></p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;find the average salary from the entire employee table:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT AVG(salary) as average_salary FROM employee; query will return the average salary for each department in the employee table:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT dept_id, AVG(salary) as avg_salary_per_dept</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;FROM employee</span></p>
+   <p style="margin: 0in 0in 0in 0.375in;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;GROUP BY dept_id;</span>&nbsp;</p>
+   <p style="margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">MIN</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●&nbsp;</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">MIN</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">: Find the minimum value in the given set of values.</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;find the minimum salary from the entire employee table:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT MIN(salary) as min_salary FROM employee;</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;Whereas the below query will return the minimum salary query will return the minimum salary for each department in the employee table:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT dept_id, MIN(salary) as min_salary_per_dept</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;FROM employee</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;GROUP BY dept_id;</span>&nbsp;</p>
+   <p style="margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">MAX:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●&nbsp;</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">MAX</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">: Find the maximum value in the given set of values.</span>&nbsp;</p>
+   <p style="margin-left: 0.75in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">find the maximum salary from the entire employee table:</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT MAX(salary) as max_salary FROM employee;</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;query will return the maximum salary for each department in the employee table:</span></p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT dept_id, MAX(salary) as max_salary_per_dept</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;FROM employee</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;GROUP BY dept_id;</span>&nbsp;</p>
+   <p style="margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">COUNT:</span>&nbsp;</p>
+   <p style="margin-left: 0.75in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">COUNT</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">: Returns the number of records or rows.</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;find the total number of records (or employees) from the entire employee table:</span></p>
+   <p style="margin-left: 0.375in; margin-top: 11pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT COUNT(emp_id) as no_of_emp FROM employee;</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;query will return the maximum salary for each department in the employee table:</span></p>
+   <p style="margin-left: 0.375in; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;SELECT dept_id, COUNT(emp_id) as no_of_emp_per_dept</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 0pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;FROM employee</span>&nbsp;</p>
+   <p style="margin-left: 0.375in; margin-top: 1pt; margin-bottom: 0pt;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">●</span><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">&nbsp;GROUP BY dept_id ;</span>&nbsp;</p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><font face="Times New Roman" size="4">&nbsp;</font></p>
+   <p lang="en-GB" style="margin: 0in; color: rgb(63, 63, 63);"><span style="font-family: &quot;Times New Roman&quot;; font-weight: bold;"><font size="5">Write the SQL query to get the third maximum salary of an employee from a table named employees.&nbsp;</font></span></p>
+   <p lang="en-GB" style="margin: 0in;"><font face="Times New Roman" size="4">SELECT * FROM `employees` ORDER BY `salary` DESC LIMIT 1 OFFSET 2</font></p>
+   <p style="margin: 0in;"><font face="Times New Roman" size="4">&nbsp;</font></p>
+  </ul> 
+ </body>
+</html>

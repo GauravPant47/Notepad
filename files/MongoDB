@@ -1,0 +1,352 @@
+<html>
+ <head></head>
+ <body>
+  <ul>
+   <li><font face="Times New Roman"><font size="5"><b>What is MongoDB ?&nbsp;</b></font></font></li>
+   <li><font face="Times New Roman">MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL (Not only SQL) database because the storage and retrieval of data in the MongoDB are not in the form of tables.</font></li>
+   <li><font face="Times New Roman"><b>Second :</b></font></li>
+   <li><font face="Times New Roman">MongoDB is a non-relational document database that provides support for JSON-like storage. The MongoDB database has a flexible data model that enables you to store unstructured data, and it provides full indexing support, and replication with rich and intuitive APIs.</font></li>
+   <li><font face="Times New Roman"><b>Third :</b></font></li>
+   <li><font face="Times New Roman">MongoDB is a document database with the scalability and flexibility that you want with the querying and indexing that you need.</font></li>
+   <li><font face="Times New Roman"><br></font></li>
+   <li><font face="Times New Roman" size="5"><b>What are some of the advantages of MongoDB?&nbsp;</b></font></li>
+   <li><font face="Times New Roman">MongoDB is schema less. It is a document database in which one collection holds different documents.&nbsp;</font></li>
+  </ul>
+  <ol type="1" style="margin-left: 0.375in; direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;"></ol>
+  <div>
+   <ul>
+    <li><font face="Times New Roman">There may be difference between number of fields, content and size of the document from one to other.&nbsp;</font></li>
+    <li><font face="Times New Roman">&nbsp;Structure of a single object is clear in MongoDB.&nbsp;</font></li>
+    <li><font face="Times New Roman">There are no complex joins in MongoDB.&nbsp;</font></li>
+    <li><font face="Times New Roman">MongoDB provides the facility of deep query because it supports a powerful dynamic query on documents.&nbsp;</font></li>
+    <li><font face="Times New Roman">&nbsp;It is very easy to scale.&nbsp;</font></li>
+    <li><font face="Times New Roman">It uses internal memory for storing working sets and this is the reason of its fast access</font></li>
+    <li><font face="Times New Roman">&nbsp;</font></li>
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What is a Document in MongoDB?&nbsp;</b></font></span></li>
+    <li><font face="Times New Roman">A Document in MongoDB is an ordered set of keys with associated values. It is represented by a map, hash, or dictionary. In JavaScript, documents are represented as objects:&nbsp;</font></li>
+    <li><font face="Times New Roman">{"greeting" : "Hello world!"}&nbsp;</font></li>
+    <li><font face="Times New Roman">Complex documents will contain multiple key/value pairs:&nbsp;</font></li>
+    <li><font face="Times New Roman">{"greeting" : "Hello world!", "views" : 3}</font></li>
+    <li><font face="Times New Roman">&nbsp;</font></li>
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What is the Mongo Shell?&nbsp;</b></font></span></li>
+    <li><font face="Times New Roman">The mongo shell is an interactive JavaScript interface to MongoDB. You can use the mongo shell to query and update data as well as perform administrative operations.</font></li>
+    <li><font face="Times New Roman">&nbsp;</font></li>
+    <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are some features of MongoDB?&nbsp;</b></font></span></li>
+    <li><font face="Times New Roman">&nbsp;Following are the important features of MongoDB:&nbsp;</font></li>
+   </ul>
+   <div>
+    <p lang="en-GB" style="margin: 0in;"></p>
+    <ul>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">A compliant data model in the format of documents.&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">Agile and extremely scalable database.&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">Quicker than traditional databases.&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">Demonstrative query language.</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How to add data in MongoDB?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">db.Collection_name.insert(&nbsp;</font></li>
+     <li><font face="Times New Roman">&lt;document or [document1, document2,…]&gt;,&nbsp;</font></li>
+     <li><br></li>
+     <li><font face="Times New Roman">&nbsp;</font><font size="5"><b>How do you Update a Document?</b></font></li>
+     <li>MongoDB's update() and save() methods are used to update document into a collection. The update() method updates the values in the existing document while the save() method replaces the existing document with the document passed in save() method.</li>
+     <li><br></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How do you Delete a Document?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">The CRUD API in MongoDB provides deleteOne and deleteMany for this purpose. Both of these methods take a filter document as their first parameter. The filter specifies a set of criteria to match against in removing documents.&nbsp;</font></li>
+     <li><font face="Times New Roman">For example:&nbsp;</font></li>
+     <li><font face="Times New Roman">&gt; db.books.deleteOne({"_id" : 3})</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How to perform queries in MongoDB?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">find() method&nbsp;</font></li>
+     <li><font face="Times New Roman">You need to use the find() method to query documents from MongoDB collections. The following statement will retrieve all documents from the collection.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are the data types in MongoDB?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">MongoDB supports a wide range of data types as values in documents. Documents in MongoDB are similar to objects in JavaScript. A MongoDB adds support for a number of additional data types. The common data types in MongoDB are:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Null&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : null}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Boolean&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : true}</font></li>
+     <li><font face="Times New Roman">● Number&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : 4}&nbsp;</font></li>
+     <li><font face="Times New Roman">● String&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : "foobar"}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Date&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : new Date()}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Regular expression&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : /foobar/i}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Array&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : ["a", "b", "c"]}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Embedded document&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : {"foo" : "bar"}}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Object ID&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : ObjectId()}&nbsp;</font></li>
+     <li><font face="Times New Roman">● Binary Data&nbsp;</font></li>
+     <li><font face="Times New Roman">Binary data is a string of arbitrary bytes.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Code&nbsp;</font></li>
+     <li><font face="Times New Roman">{"x" : function() { /* ... */ }}&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><br></span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>When to use MongoDB?&nbsp;</b></font></span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">MongoDB is the most popular of the new breed of non-relational NoSQL databases. Specifically, it’s a document database, also called a document-oriented database or a document store.&nbsp;</span></li>
+     <li><font face="Times New Roman">● Documents hold semistructured data, usually represented in a format like JSON or XML, and each document is associated with a unique key.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Key values are typically a path or a URI that can be used to retrieve the associated document from the database.&nbsp;</font></li>
+     <li><font face="Times New Roman">● The keys are indexed, making it efficient to retrieve the associated documents.</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Explain the term “Indexing” in MongoDB.&nbsp;</b></font></span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">MongoDB uses indexing in order to make the query processing more efficient. If there is no indexing, then the MongoDB must scan every document in the collection and retrieve only those documents that match the query. Indexes are special data structures that stores some information related to the documents such that it becomes easy for MongoDB to find the right data file.</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Explain the process of Sharding.&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">Sharding is a method for distributing data across multiple machines. MongoDB uses sharding to support deployments with very large data sets and high throughput operations.&nbsp;</font></li>
+     <li><font face="Times New Roman">Database systems with large data sets or high throughput applications can challenge the capacity of a single server. For example, high query rates can exhaust the CPU capacity of the server. Working set sizes larger than the system's RAM stress the I/O capacity of disk drives.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Explain the SET Modifier in MongoDB?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">The $set operator replaces the value of a field with the specified value. The $set operator expression has the following form:&nbsp;</font></li>
+     <li><font face="Times New Roman">{ $set: { &lt;field1&gt;: &lt;value1&gt;, ... } }&nbsp;</font></li>
+     <li><font face="Times New Roman">To specify a &lt;field&gt; in an embedded document or in an array, use dot notation.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What is “Namespace” in MongoDB?</b></font></span></li>
+     <li><font face="Times New Roman">MongoDB stores BSON (Binary Interchange and Structure Object Notation) objects in the collection. The concatenation of the collection name and database name is called a namespace.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Why MongoDB is the best NoSQL database?</b></font></span></li>
+     <li><font face="Times New Roman">MongoDB is the best NoSQL database due to the following features:&nbsp;</font></li>
+     <li><font face="Times New Roman">● High Performance&nbsp;</font></li>
+     <li><font face="Times New Roman">● High Availability</font></li>
+     <li><font face="Times New Roman">● Easily Scalable&nbsp;</font></li>
+     <li><font face="Times New Roman">● Rich Query Language&nbsp;</font></li>
+     <li><font face="Times New Roman">● Document Oriented</font></li>
+     <li><font face="Times New Roman" size="5"><br></font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are Databases in MongoDB?</b></font></span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">MongoDB groups collections into databases. MongoDB can host several databases, each grouping together collections.&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">Some reserved database names are as follows:&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">admin&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">local&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">config</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What do you mean by Transactions?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">A transaction is a logical unit of processing in a database that includes one or more database operations, which can be read or write operations. Transactions provide a useful feature in MongoDB to ensure consistency.</font></li>
+    </ul>
+    <p></p>
+    <ul>
+     <li value="19" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">What is the syntax to create a collection and to drop a collection in MongoDB?&nbsp;</font></li>
+     <li><font face="Times New Roman">● Syntax to create collection in MongoDB is db.createCollection(name,options)</font></li>
+     <li><font face="Times New Roman">● Syntax to drop collection in MongoDB is db.collection.drop()&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="20" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Mention what is the command syntax for inserting a document?</font></li>
+     <li><font face="Times New Roman">For inserting a document command syntax is database.collection.insert (document).</font></li>
+     <li value="21" lang="en-GB" style="vertical-align: middle; margin-top: 10pt; margin-bottom: 0pt;"><font face="Times New Roman" size="5">What are the pros and cons of normalizing data in a MongoDB database?</font></li>
+     <li lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman">Just like in traditional RDBMSs, updating documents is fast for normalized data and relatively slower for denormalized data. On the other hand, reading documents is fast in denormalized data and slower for normalized data. Denormalized data is harder to keep in sync and takes up more space.&nbsp;</font></li>
+     <li lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman">Note that in MongoDB, denormalized data is a more common expectation. This is because RDBMSes have inherent support for normalization and allow data to be managed as a separate concern, whereas NoSQL DBMSes like MongoDB do not inherently support normalization.&nbsp;</font></li>
+     <li lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman">Instead, normalization requires that client applications carefully maintain integrity themselves. To help with this, it’s possible to run audits to ensure that app data conforms to expected patterns of referential integrity.&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="22" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">What is the difference between the $all operator and the $in operator?</font></li>
+     <li><font face="Times New Roman">Both the $all operator and the $in operator are used to filter documents in a subarray based on a conditional. Let us assume we have the following documents in a collection.&nbsp;The $all operator is stricter than the $in operator. $all is comparable to an AND conditional, and likewise $in resembles an OR conditional. That is to say, $all retrieves documents that satisfy all conditions in the query array, whereas $in retrieves documents that meet any condition in the query array.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="23" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman"><font size="5">How are constraints managed in MongoDB?</font>&nbsp;</font></li>
+     <li><font face="Times New Roman">You can add a document validator on the collections starting MongoDB 3.2. Unique indexes can also be created using db.collection.createIndex({“key” : 1} , );&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="24" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Explain the primary and secondary replica set?&nbsp;</font></li>
+     <li><font face="Times New Roman">In MongoDB, primary nodes are the nodes that accept writing. Primary nodes are also called master nodes. Replication in MongoDB is a single master. Therefore, only one node will accept the write operations at once.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="25" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">How to do locking or transactions in MongoDB?&nbsp;</font></li>
+     <li><font face="Times New Roman">MongoDB does not use traditional locking with the reduction because it is high-speed, knowable, and light in the presentation. We can consider it as the MyISAM, MySQL auto entrust script. Through the simpler business sustain, we can enhance the performance, specifically in the structure with various servers</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="26" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">How does MongoDB provides concurrency?</font></li>
+     <li><font face="Times New Roman">MongoDB utilizes the reader-writer locks, enabling concurrent readers to access any supply such as collection or database though it provides private access to individual writers.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="27" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">How do we perform sorting and Explain Project in MongoDB?&nbsp;</font></li>
+     <li><font face="Times New Roman">For finding any data in MongoDB, we use the find() method. The discovery () method returns the collection’s documents over which we invoked this method. We can use the “Where” clause in the MongoDB query in order to restrict the output by using MongoDB projection. Anytime we execute the find() method, MongoDB returns all the documents associated with a particular collection.&nbsp;</font></li>
+     <li><font face="Times New Roman">db.&lt;collection_name&gt;.find({ }, {&lt;key_Name&gt;:&lt;Flag to display&gt;})</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="28" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">How do we create a database in MongoDB?&nbsp;</font></li>
+     <li><font face="Times New Roman">When I want to create a database in MongoDB, I faced the following error:&nbsp;</font></li>
+     <li><font face="Times New Roman">:~$mongo&nbsp;</font></li>
+     <li><font face="Times New Roman">MongoDB shell version:1.65&nbsp;</font></li>
+     <li><font face="Times New Roman">Connecting to: test&nbsp;</font></li>
+     <li><font face="Times New Roman">Error: Could not connect to the server&nbsp;</font></li>
+     <li><font face="Times New Roman">Exception: connect failed&nbsp;</font></li>
+     <li><font face="Times New Roman">The solution to the above error:&nbsp;</font></li>
+     <li><font face="Times New Roman">1. cd/var1/lib1/MongoDB&nbsp;</font></li>
+     <li><font face="Times New Roman">2. We remove the mongodb. lock from the folder&nbsp;</font></li>
+     <li><font face="Times New Roman">3. Sudo start MongoDB&nbsp;</font></li>
+     <li><font face="Times New Roman">4. Mongo&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="29" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Which command do we use for creating the backup of the database?</font></li>
+     <li><font face="Times New Roman">We use the mongodump command for creating the database backup.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="30" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Which command do we use for restoring the backup?&nbsp;</font></li>
+     <li><font face="Times New Roman">We use mongorestore for restoring the backup.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="31" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Explain the importance of the dot notation?&nbsp;</font></li>
+     <li><font face="Times New Roman">In MongoDB, we use dot notation for accessing the array elements and the fields of an embedded document.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="32" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">What is the syntax of the limit() and sort() method?&nbsp;</font></li>
+     <li><font face="Times New Roman">Syntax of the limit() method is:&nbsp;</font></li>
+     <li><font face="Times New Roman">&gt;db.COLLECTION_NAME.find().limit(NUMBER)&nbsp;</font></li>
+     <li><font face="Times New Roman">Syntax of the sort() method is:&nbsp;</font></li>
+     <li><font face="Times New Roman">&gt;db.COLLECTION_NAME.find().sort({KEY:1})</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="33" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">What do you know about NoSQL databases? What are the various types of NoSQL databases?&nbsp;</font></li>
+     <li><font face="Times New Roman">NoSQL refers to “Not Only SQL”. NoSQL is a kind of database that handles and sorts all kinds of structured, massive, and difficult data. It is a new method to think about databases. Kinds of NoSQL databases:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Key-Value&nbsp;</font></li>
+     <li><font face="Times New Roman">● Graph&nbsp;</font></li>
+     <li><font face="Times New Roman">● Column Oriented&nbsp;</font></li>
+     <li><font face="Times New Roman">● Document Oriented</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="34" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Which command do we use for dropping a database?&nbsp;</font></li>
+     <li><font face="Times New Roman">We use the “DB.drop database” command for dropping a database.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="35" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Explain MongoDB Projection&nbsp;</font></li>
+     <li><font face="Times New Roman">In MongoDB, we use Projection for selecting only the required data. It will not select the complete data of a document.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="36" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5">Why do we use the pretty() method?&nbsp;</font></li>
+     <li><font face="Times New Roman">We use the pretty() method for displaying the results in a formatted way.</font></li>
+     <li><font face="Times New Roman" size="5">&nbsp;</font></li>
+     <li value="37" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5"><b>How do we remove a document from the collection?&nbsp;</b></font></li>
+     <li><font face="Times New Roman">By using the remove() method, we remove a document from the collection.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li value="38" lang="en-GB" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle;"><font face="Times New Roman" size="5"><b>What are the points we should consider while creating a schema in MongoDB?&nbsp;</b></font></li>
+     <li><font face="Times New Roman">We must consider the following points while creating a schema:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Designing the Scheme based on the user requirements.</font></li>
+     <li><font face="Times New Roman">● Combining the objects into one document, if we have to use them jointly, or else, separate them.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Perform joins while on write, and not while it is reading.&nbsp;</font></li>
+     <li><font face="Times New Roman">● For most general application scenarios, maximize the schema.</font></li>
+     <li><font face="Times New Roman">● Perform complex aggregations in the schema.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What does ObjectId contain?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">ObjectId contains the following:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Client machine ID&nbsp;</font></li>
+     <li><font face="Times New Roman">● Client process ID&nbsp;</font></li>
+     <li><font face="Times New Roman">● Byte incremented counter&nbsp;</font></li>
+     <li><font face="Times New Roman">● Timestamp</font></li>
+     <li><font face="Times New Roman"><br></font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How do we use the select * group by MongoDB aggregation?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">For instance, if we have to select all the attributes and groups by name throughout the records. For example:&nbsp;</font></li>
+     <li><font face="Times New Roman">{Name: George, x: 5, y: 3}&nbsp;</font></li>
+     <li><font face="Times New Roman">{Name: George, z: 9}&nbsp;</font></li>
+     <li><font face="Times New Roman">{Name: Rob, x: 12, y: 2}&nbsp;</font></li>
+     <li><font face="Times New Roman">We can do MongoDB aggregation as follows:&nbsp;</font></li>
+     <li><font face="Times New Roman">db.example.aggregate(&nbsp;</font></li>
+     <li><font face="Times New Roman">{&nbsp;</font></li>
+     <li><font face="Times New Roman">$group:{&nbsp;</font></li>
+     <li><font face="Times New Roman">_id:'$name',&nbsp;</font></li>
+     <li><font face="Times New Roman">x: {$addToSet: "$x" },&nbsp;</font></li>
+     <li><font face="Times New Roman">y: {$addToSet: "$y" },&nbsp;</font></li>
+     <li><font face="Times New Roman">z: {$addToSet: "$z" },&nbsp;</font></li>
+     <li><font face="Times New Roman">}</font></li>
+     <li><font face="Times New Roman">}&nbsp;</font></li>
+     <li><font face="Times New Roman">)&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-size: x-large; font-family: &quot;Times New Roman&quot;;"><b>Explain Vertical Scaling and Horizontal Scaling?&nbsp;</b></span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">● Vertical Scaling: Vertical Scaling increases storage and CPU resources for expanding the capacity.&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">● Horizontal Scaling: Horizontal Scaling splits the datasets and circulates the data over multiple shards or servers.&nbsp;</span></li>
+     <li><br></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are the elements of the Sharded Cluster?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">Following are the elements of the Sharded Cluster:&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">● Query routers&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">● Shards&nbsp;</span></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;">● Config servers</span></li>
+     <li><font face="Times New Roman"><br></font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are the substitutes for MongoDB?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">Following are the substitutes to MongoDB:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Hbase&nbsp;</font></li>
+     <li><font face="Times New Roman">● CouchDB&nbsp;</font></li>
+     <li><font face="Times New Roman">● Cassandra&nbsp;</font></li>
+     <li><font face="Times New Roman">● Redis&nbsp;</font></li>
+     <li><font face="Times New Roman">● Riak</font></li>
+     <li><font face="Times New Roman"><br></font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How can we old files in the moveChunk directory?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">In the course of general shard balancing operations, we make the old files as backups, and we can delete them when those operations are completed.</font></li>
+     <li><br></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What is a Storage Engine?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">Storage Engine is a component of the database that is accountable to manage how we store on the disk. For instance, one storage engine may provide better performance for the read-heavy workloads, and another one may support a great throughput for the write operations.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Does MongoDB require plenty of RAM?</b></font></span></li>
+     <li><font face="Times New Roman">No, MongoDB does not require plenty of RAM. It can run on a small amount of memory. MongoDB dynamically assigns and unassigns RAM according to the needs of other processes.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>What are the aggregate functions of MongoDB?</b></font></span></li>
+     <li><font face="Times New Roman">Following are the aggregate functions of MongoDB:&nbsp;</font></li>
+     <li><font face="Times New Roman">● AVG&nbsp;</font></li>
+     <li><font face="Times New Roman">● Sum&nbsp;</font></li>
+     <li><font face="Times New Roman">● Min&nbsp;</font></li>
+     <li><font face="Times New Roman">● Max&nbsp;</font></li>
+     <li><font face="Times New Roman">● First&nbsp;</font></li>
+     <li><font face="Times New Roman">● Push&nbsp;</font></li>
+     <li><font face="Times New Roman">● addTo Set&nbsp;</font></li>
+     <li><font face="Times New Roman">● Last&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Differences between MongoDB and RDBMS</b></font></span></li>
+     <li>
+      <table border="1" cellpadding="0" cellspacing="0" valign="top" style="width: 1419.2px; direction: ltr; border-style: solid; border-color: rgb(163, 163, 163); border-width: 1pt;">
+       <tbody>
+        <tr>
+         <td>RDBMS</td>
+         <td>MongoDB</td>
+        </tr>
+        <tr>
+         <td>It is a relational database.</td>
+         <td>It is a non-relational and document-oriented database.</td>
+        </tr>
+        <tr>
+         <td>Not suitable for hierarchical data storage.</td>
+         <td>Suitable for hierarchical data storage.</td>
+        </tr>
+        <tr>
+         <td>It is vertically scalable i.e increasing RAM.</td>
+         <td>It is horizontally scalable i.e we can add more servers.</td>
+        </tr>
+        <tr>
+         <td>It has a predefined schema.</td>
+         <td>It has a dynamic schema.</td>
+        </tr>
+        <tr>
+         <td>It is quite vulnerable to SQL injection.</td>
+         <td>It is not affected by SQL injection.</td>
+        </tr>
+        <tr>
+         <td>It centres around ACID properties (Atomicity, Consistency, Isolation, and Durability).</td>
+         <td>It centres around the CAP theorem (Consistency, Availability, and Partition tolerance).</td>
+        </tr>
+        <tr>
+         <td>It is row-based.</td>
+         <td>It is document-based.</td>
+        </tr>
+        <tr>
+         <td>It is slower in comparison with MongoDB.</td>
+         <td>It is almost 100 times faster than RDBMS.</td>
+        </tr>
+        <tr>
+         <td>Supports complex joins.</td>
+         <td>No support for complex joins.</td>
+        </tr>
+        <tr>
+         <td>It is column-based.</td>
+         <td>It is field-based.</td>
+        </tr>
+        <tr>
+         <td>It does not provide JavaScript client for querying.</td>
+         <td>It provides a JavaScript client for querying.</td>
+        </tr>
+        <tr>
+         <td>It supports SQL query language only.</td>
+         <td>It supports JSON query language along with SQL.</td>
+        </tr>
+       </tbody>
+      </table></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>How do applications access the real-time data modifications in MongoDB?</b></font></span></li>
+     <li><font face="Times New Roman">Applications access the real-time data modifications through the Change streams that serve as the subscriber for every collection operation like delete, insert, and update.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><font size="5"><b><span style="font-family: &quot;Times New Roman&quot;;">What are the different kinds of Indexes in MongoDB?&nbsp;</span></b></font></li>
+     <li><font face="Times New Roman">Following are the different kinds of Indexes in MongoDB:&nbsp;</font></li>
+     <li><font face="Times New Roman">● Default: It is the “_id” that MongoDB creates.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Compound: It is useful for multiple fields.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Multi-key: It indexes the array data.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Single field: It sorts and indexes over a single field.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Geospatial: It is useful for querying the location data.&nbsp;</font></li>
+     <li><font face="Times New Roman">● Hashed: It indexes the hashes of the multiple fields.</font></li>
+     <li><font face="Times New Roman">&nbsp;</font></li>
+     <li><span style="font-family: &quot;Times New Roman&quot;;"><font size="5"><b>Explain how to start the MongoDB Instance or Server?&nbsp;</b></font></span></li>
+     <li><font face="Times New Roman">We have to follow the below steps for starting the MongoDB Server:&nbsp;</font></li>
+     <li><font face="Times New Roman">● First, open the command prompt and execute the “mongod.exe” file.</font></li>
+     <li><font face="Times New Roman">● On the other hand, we move to the path where we installed MongoDB.</font></li>
+     <li><font face="Times New Roman">● Go to the bin folder, find the “mongod.exe” file, and double click the file for executing it.&nbsp;</font></li>
+     <li><font face="Times New Roman">● We can go to the folder, for instance, “C: MongoDB/bin” and type mongo for connecting MongoDB by using the Shell.</font></li>
+    </ul>
+   </div>
+  </div> 
+ </body>
+</html>

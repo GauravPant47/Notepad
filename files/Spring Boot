@@ -1,0 +1,384 @@
+<html>
+ <head></head>
+ <body>
+  <ul>
+   <li style="text-align: center;"><font size="6" color="#0000ff">Spring Boot and Spring Data Interview Questions</font></li>
+  </ul>
+  <p></p>
+  <ul>
+   <li value="1" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring Boot?</span></li>
+   <li>Spring Boot is an open-source Java-based framework to build stand-alone, production-grade applications with minimal configuration. It is based on the Spring and provides a simple and fast way to build production-ready applications.</li>
+   <li>&nbsp;</li>
+   <li>Spring Boot allows developers to quickly build applications that can be deployed as standalone executables, microservices, or containers. It comes with many pre-built features like an embedded server, metrics, health checks, security, and external configuration. It also provides easy integration with other Spring projects such as Spring Data, Spring Security, and Spring Cloud.</li>
+   <li>&nbsp;</li>
+   <li value="2" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What are the important Features of Spring Boot?</span></li>
+   <li>The key features of Spring Boot include:</li>
+   <li>Easy to create standalone Spring applications.</li>
+   <li>Opinionated approach to configuration, reducing the need for boilerplate code.</li>
+   <li>Built-in support for common non-functional features like metrics, health checks, and security.</li>
+   <li>Integration with a wide range of third-party libraries and frameworks.</li>
+   <li>Support for both traditional and cloud-native deployment models.</li>
+   <li>&nbsp;</li>
+   <li value="3" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Compare Spring Boot vs Spring?</span></li>
+   <li>Spring Boot and Spring are both Java-based frameworks used to build enterprise applications, but there are some key differences between them.</li>
+   <li>&nbsp;</li>
+   <li>Spring is a comprehensive framework that provides a wide range of features for building enterprise applications, such as dependency injection, AOP (Aspect-oriented programming), data access, transaction management, and MVC&nbsp; (Model View Controller) web applications. Spring requires a significant amount of configuration to set up, which can be time-consuming.</li>
+   <li>&nbsp;</li>
+   <li>Spring Boot, on the other hand, is built on top of Spring and provides a simplified approach to building Spring applications with minimal configuration. Spring Boot provides a range of features out of the box, such as embedded servers, metrics, health checks, security, and externalized configuration, which can be easily configured and customized as need ed.</li>
+   <li>&nbsp;</li>
+   <li value="4" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is the importance of @SpringBootApplication?</span></li>
+   <li>The @SpringBootApplication annotation provides a convenient way to configure and bootstrap a Spring Boot application with minimal code. It helps to reduce the amount of boilerplate code required to set up a Spring Boot application, and allows developers to focus on writing business logic instead of configuration.</li>
+   <li>&nbsp;</li>
+   <li>Second</li>
+   <li>&nbsp;</li>
+   <li>Spring Boot @SpringBootApplication annotation is used to mark a configuration class that declares one or more @Bean methods and also triggers auto-configuration and component scanning.</li>
+   <li>&nbsp;</li>
+   <li value="5" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Auto Configuration?</span></li>
+   <li><span style="font-size: 12pt;">Auto Configuration is a powerful feature in Spring Boot that helps developers to get started quickly and easily with Spring applications, without having to spend time configuring every aspect of their application</span><span style="font-size: 11pt;">.</span></li>
+   <li>&nbsp;</li>
+   <li value="6" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is an embedded server? Why is it important?</span></li>
+   <li>Embedded servers are an important feature in Spring Boot that make it easier to develop and deploy web applications, while providing high performance and flexibility.</li>
+   <li>Some benefits of using embedded servers in Spring Boot include:</li>
+   <li>&nbsp;</li>
+   <li>Simplified deployment: Since the embedded server is packaged with the application, there is no need to install or configure a separate web server. This makes deployment much simpler and faster.</li>
+   <li>&nbsp;</li>
+   <li>Easy testing: Embedded servers can be started and stopped programmatically, which makes it easy to write automated tests that simulate user requests and verify the application's behaviour.</li>
+   <li>&nbsp;</li>
+   <li>Performance: Embedded servers are optimized for running web applications, and can handle high traffic loads efficiently.</li>
+   <li>&nbsp;</li>
+   <li>Flexibility: Spring Boot supports multiple embedded servers, which gives developers the flexibility to choose the server that best fits their needs.</li>
+   <li>&nbsp;</li>
+   <li value="7" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is the default embedded server with Spring Boot?</span></li>
+   <li>The default embedded server used by Spring Boot is Tomcat. Tomcat is a widely-used web server and servlet container that is fast, reliable, and easy to use. Spring Boot includes an embedded version of Tomcat, which means that developers can build and deploy web applications without needing to install and configure an external Tomcat server.</li>
+   <li>&nbsp;</li>
+   <li value="8" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring Initializer?</span></li>
+   <li>Spring Initializer is a web-based tool that allows developers to quickly create and configure new Spring Boot projects. It provides a simple user interface for selecting project dependencies, configuring project settings, and downloading a fully configured project structure.</li>
+   <li>&nbsp;</li>
+   <li>With Spring Initializer, developers can create new Spring Boot projects in minutes, without having to manually configure all the necessary dependencies and settings. The tool generates a project structure that includes a default set of files and directories, as well as a pre-configured build configuration and application.properties file.</li>
+   <li>&nbsp;</li>
+   <li>Second</li>
+   <li>&nbsp;</li>
+   <li>Spring Initializer provides an extensible API to generate JVM-based projects, and to inspect the metadata used to generate projects, for instance to list the available dependencies and versions.</li>
+   <li>&nbsp;</li>
+   <li value="9" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is application.properties?</span></li>
+   <li>application.properties is a configuration file used in Spring Boot applications to provide configuration settings for various components of the application. It is a plain text file that can be located in the root of the classpath, in the src/main/resources directory of a Maven project.</li>
+   <li>&nbsp;</li>
+   <li>The application.properties file uses a simple key-value format to specify configuration settings. These settings can include database connection details, server settings, logging levels, and other application-specific settings.</li>
+   <li>&nbsp;</li>
+   <li value="10" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is @ConfigurationProperties?</span></li>
+   <li>@ConfigurationProperties is an annotation in Spring Boot that is used to bind external configuration properties to a Java class. By using this annotation, developers can create Java objects that represent the configuration properties, and Spring Boot will automatically bind the values of those properties from external configuration files or environment variables.</li>
+   <li>&nbsp;</li>
+   <li>For example, suppose we have a Spring Boot application that needs to connect to a database, and we have defined the connection details in an external application.properties file. We can create a Java class with fields that correspond to the configuration properties, and annotate the class with @ConfigurationProperties to bind the values of those properties to the class fields.</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>Configuration</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>ConfigurationProperties(prefix =&nbsp;<span style="color: rgb(42, 0, 255);">"database"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public class&nbsp;</span>DatabaseConfig&nbsp;{</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private</span>&nbsp;String&nbsp;<span style="color: rgb(0, 0, 192);">url</span>;</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private</span>&nbsp;String&nbsp;<span style="color: rgb(0, 0, 192);">username</span>;</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private</span>&nbsp;String&nbsp;<span style="color: rgb(0, 0, 192);">password</span>;</li>
+   <li>// Getters and setters</li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li value="11" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring Boot Actuator?</span></li>
+   <li>Spring Boot Actuator is a feature of Spring Boot that provides a set of production-ready tools and APIs for monitoring and managing Spring Boot applications. It enables developers to easily expose various metrics and health checks for their applications, as well as interact with the running application and manage its internals.</li>
+   <li>&nbsp;</li>
+   <li value="12" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a CommandLineRunner?</span></li>
+   <li>CommandLineRunner is an interface in Spring Boot that provides a simple way to execute code after the application has started up and the Spring context has been fully initialized.</li>
+   <li>&nbsp;</li>
+   <li>CommandLineRunner is a convenient way to perform any initialization or setup tasks needed by a Spring Boot application, and can be used to ensure that the application is fully ready to serve requests before it starts running.</li>
+   <li>&nbsp;</li>
+   <li value="13" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring JDBC? How is different from JDBC?</span></li>
+   <li>Spring JDBC is a module in the Spring Framework that provides a higher-level abstraction over the Java Database Connectivity (JDBC) API, making it easier to work with databases in Java applications. It simplifies the development of database access code by handling low-level details such as connection management and exception handling, allowing developers to focus on writing business logic.</li>
+   <li>&nbsp;</li>
+   <li value="14" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a JdbcTemplate?</span></li>
+   <li>JdbcTemplate provides a convenient and streamlined API for executing SQL statements and queries in Spring applications, and simplifies many of the low-level details of JDBC programming.</li>
+   <li>&nbsp;</li>
+   <li value="15" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is JPA?</span></li>
+   <li>JPA provides a set of interfaces and annotations that allow developers to map Java objects to relational database tables, and to perform database operations on those objects using a high-level, object-oriented API. By using JPA, developers can avoid writing low-level SQL code and instead focus on the domain model and business logic of their application.</li>
+   <li>&nbsp;</li>
+   <li value="16" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Hibernate?</span></li>
+   <li>Hibernate is an open-source Object-Relational Mapping (ORM) framework for Java. It provides a high-level, object-oriented API for mapping Java objects to relational database tables, and for performing database operations on those objects.</li>
+   <li>&nbsp;</li>
+   <li>Hibernate is often used in conjunction with JPA (Java Persistence API) to simplify the development of database-driven applications.</li>
+   <li>&nbsp;</li>
+   <li value="17" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">How do you define an entity in JPA?</span></li>
+   <li>In JPA, an entity is a persistent class that maps to a database table. To define an entity in JPA, you need to follow these steps:</li>
+   <li>&nbsp;</li>
+   <li>Create a Java class that represents the entity. The class must have a public or protected no-argument constructor, and it must be annotated with the @Entity annotation.</li>
+   <li>&nbsp;</li>
+   <li>Define the attributes of the entity as private or protected fields. Each field should have a getter and setter method, and it can be annotated with various JPA annotations to specify the mapping to the database table, such as @Id for the primary key, @Column for the column name, and @GeneratedValue for the automatic generation of primary key values.</li>
+   <li>&nbsp;</li>
+   <li value="18" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring Data?</span></li>
+   <li>Spring Data is a framework within the Spring Framework that simplifies the development of data access layers in Java applications. It provides a consistent, high-level programming model for interacting with different data stores such as relational databases, NoSQL databases, and more.</li>
+   <li>&nbsp;</li>
+   <li>Spring Data is designed to make it easy to perform common data access operations such as querying, updating, and deleting data, as well as providing support for pagination, sorting, and caching. It does this by providing a set of powerful abstractions and utilities that can be used across multiple data stores, along with specific implementations for different data stores.</li>
+   <li>&nbsp;</li>
+   <li value="19" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Spring Data JPA?</span></li>
+   <li>Spring Data JPA is a sub-project of Spring Data that provides a powerful abstraction layer on top of JPA (Java Persistence API). It aims to simplify the development of data access layers in Java applications that use JPA for object-relational mapping.</li>
+   <li>&nbsp;</li>
+   <li>Spring Data JPA builds upon the standard JPA annotations and provides additional annotations and abstractions to make working with JPA easier and more efficient.</li>
+   <li>&nbsp;</li>
+   <li value="20" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a CrudRepository?</span></li>
+   <li>In Spring Data, CrudRepository is an interface that provides a set of generic CRUD (Create, Read, Update, Delete) methods for working with a data store. It is a sub-interface of the Repository interface and provides additional methods for saving, deleting, and retrieving entities from the data store.</li>
+   <li>&nbsp;</li>
+   <li>&nbsp;</li>
+   <li>Microservices Interview preparation</li>
+   <li>&nbsp;</li>
+   <li value="21" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Model 1 architecture?</span></li>
+   <li>In a Model 1 architecture, the presentation logic (HTML, CSS, etc.) and business logic (Java code) are typically tightly coupled together in a single servlet or JSP page. This can make it difficult to maintain and evolve the application over time, especially as it grows in complexity.</li>
+   <li>&nbsp;</li>
+   <li>&nbsp;</li>
+   <li value="22" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Model 2 architecture?</span></li>
+   <li>In Spring, Model 2 architecture refers to the Model-View-Controller (MVC) pattern used for building web applications. The MVC pattern separates an application into three distinct components:</li>
+   <li>&nbsp;</li>
+   <li>Model: The model contains the application's data and business logic. It can also interact with a database or other external systems.</li>
+   <li>&nbsp;</li>
+   <li>View: The view displays the data to the user and handles user input. In Spring MVC, views are typically implemented using JSP pages or HTML templates.</li>
+   <li>&nbsp;</li>
+   <li>Controller: The controller handles user input, communicates with the model to retrieve or modify data, and selects the appropriate view to display the response.</li>
+   <li>&nbsp;</li>
+   <li>Second</li>
+   <li>&nbsp;</li>
+   <li>Spring Boot typically follows the Model-View-Controller (MVC) architecture.</li>
+   <li>&nbsp;</li>
+   <li>In MVC, the "Model" represents the business logic and data, the "View" handles the presentation and user interface, and the "Controller" manages the communication between the Model and the View.</li>
+   <li>&nbsp;</li>
+   <li>&nbsp;</li>
+   <li value="23" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Can you show an example controller method in Spring MVC?</span></li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>RequestMapping(<span style="color: rgb(42, 0, 255);">"/books"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public class&nbsp;</span>BookController&nbsp;{</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>Autowired</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private&nbsp;</span>BookService&nbsp;<span style="color: rgb(0, 0, 192);">bookService</span>;</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>GetMapping(<span style="color: rgb(42, 0, 255);">"/{id}"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public&nbsp;</span><span style="background: rgb(212, 212, 212);">String</span>&nbsp;getBook(<span style="color: rgb(100, 100, 100);">@</span>PathVariable&nbsp;Long id,&nbsp;Model&nbsp;model){</li>
+   <li>Book&nbsp;book =&nbsp;bookService.getBookById(id); model.addAttribute(<span style="color: rgb(42, 0, 255);">"book"</span>, book);</li>
+   <li><span style="background: rgb(212, 212, 212); font-weight: bold; color: rgb(127, 0, 85);">Return&nbsp;</span><span style="background: rgb(212, 212, 212); color: rgb(42, 0, 255);">"book-details"</span><span style="background: rgb(212, 212, 212);">;</span></li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li value="24" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Can you explain a simple flow in Spring MVC?</span></li>
+   <li>Here's a simple flow in Spring MVC:</li>
+  </ul>
+  <ol>
+   <li>The user sends a request to the server by entering a URL or clicking a link.</li>
+   <li>The request is received by the Servlet container, which passes it to the DispatcherServlet, the entry point of Spring MVC.</li>
+   <li>The DispatcherServlet maps the request to a specific controller based on the URL mapping defined in the application configuration.</li>
+   <li>The controller processes the request by interacting with the model, which contains the application data and business logic.</li>
+   <li>The controller selects the appropriate view to render the response, based on the logic of the application and the data in the model.</li>
+   <li>The view is rendered by a view resolver, which maps the view name to the actual view file (JSP or HTML template).</li>
+   <li>The response is sent back to the client, usually as an HTML page, JSON or XML response.</li>
+  </ol>
+  <ul>
+   <li>&nbsp;</li>
+   <li value="25" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Model?</span></li>
+   <li>In the context of Spring MVC, the Model is a component responsible for encapsulating the application data and business logic. It represents the state of the application and provides a way for controllers to interact with that state.</li>
+   <li>In the Model-View-Controller (MVC) pattern, the Model is the component responsible for managing the application data and providing it to the view for display. The Model can also include business logic, validation rules, and other application-specific behaviour.</li>
+   <li>&nbsp;</li>
+   <li value="26" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is ModelAndView?</span></li>
+   <li>holds data to be displayed in the view and specifies which view should be rendered to the user.</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>GetMapping(<span style="color: rgb(42, 0, 255);">"/products/{id}"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public&nbsp;</span><span style="background: rgb(212, 212, 212);">ModelAndView</span>&nbsp;getProduct(<span style="color: rgb(100, 100, 100);">@</span>PathVariable&nbsp;Long id){</li>
+   <li>Product&nbsp;product =&nbsp;productService.getProductById(id);</li>
+   <li>ModelAndView&nbsp;mav =&nbsp;<span style="font-weight: bold; color: rgb(127, 0, 85);">new&nbsp;</span>ModelAndView(<span style="color: rgb(42, 0, 255);">"product-details"</span>);</li>
+   <li>mav.addObject(<span style="color: rgb(42, 0, 255);">"product"</span>, product);</li>
+   <li><span style="background: rgb(212, 212, 212); font-weight: bold; color: rgb(127, 0, 85);">return</span><span style="background: rgb(212, 212, 212);">&nbsp;mav;</span></li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li>Overall, ModelAndView provides a flexible and powerful way to encapsulate both data and view information in a single object, making it easier to pass data between controllers and views in Spring MVC.</li>
+   <li>&nbsp;</li>
+   <li value="27" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a RequestMapping?</span></li>
+   <li>In Spring MVC, @RequestMapping is an annotation that is used to map a web request to a specific handler method in a controller. It's used to define which URL patterns should be handled by which controller methods.</li>
+   <li>&nbsp;</li>
+   <li>The @RequestMapping annotation can be used at the class level to define a base URL for all requests handled by the controller, and at the method level to define the specific URL pattern for a particular handler method.</li>
+   <li>&nbsp;</li>
+   <li value="28" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">How is validation done using Spring MVC?</span></li>
+   <li>In Spring MVC, validation is typically performed using the javax.validation API, which provides a set of annotations for validating the data entered by users in HTML forms.</li>
+   <li>To use validation in Spring MVC, you first need to annotate the model class with validation annotations. For example, to validate a Product object, you can annotate its fields using the @NotNull and @Size annotations:</li>
+   <li>&nbsp;</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public class&nbsp;</span>Product&nbsp;{</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>NotNull</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private</span>&nbsp;Long&nbsp;<span style="color: rgb(0, 0, 192);">id</span>;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>NotNull</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>Size(min = 1, max = 50)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private</span>&nbsp;String&nbsp;<span style="color: rgb(0, 0, 192);">name</span>;</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>NotNull</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private&nbsp;</span>BigDecimal&nbsp;<span style="color: rgb(0, 0, 192);">price</span>;</li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li value="29" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What are Spring Form Tags?</span></li>
+   <li>Spring Form Tags are a set of custom tags provided by the Spring MVC framework that allow you to bind HTML form elements to model objects and validate user input.</li>
+   <li>&nbsp;</li>
+   <li>Spring Form Tags include the following:</li>
+   <li>&lt;form:form&gt;</li>
+   <li>&lt;form:input&gt;</li>
+   <li>&lt;form:select&gt;</li>
+   <li>&lt;form:checkbox&gt;</li>
+   <li>&lt;form:radiobutton&gt;</li>
+   <li>&nbsp;</li>
+   <li value="30" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a Path Variable?</span></li>
+   <li>In Spring MVC, a Path Variable is a parameter extracted from the URL path of a request mapping. It is used to capture dynamic values from the URL and pass them to the controller method as a parameter.</li>
+   <li>&nbsp;</li>
+   <li>Path Variables are defined in a request mapping using curly braces {}.</li>
+   <li>&nbsp;</li>
+   <li>@GetMapping("/users/{id}")</li>
+   <li>&nbsp;</li>
+   <li value="31" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a Session Attribute?</span></li>
+   <li>Session Attributes are typically used to store data that is specific to a particular user session, such as a shopping cart or user preferences. They can be added to the HttpSession object using the session. setAttribute method or by using the @SessionAttribute annotation.</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>GetMapping(<span style="color: rgb(42, 0, 255);">"/shopping-cart"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public&nbsp;</span>String&nbsp;showShoppingCart(<span style="color: rgb(100, 100, 100);">@</span>SessionAttribute(<span style="color: rgb(42, 0, 255);">"cart"</span>)ShoppingCart&nbsp;cart,&nbsp;Model&nbsp;model){</li>
+   <li>model.addAttribute(<span style="color: rgb(42, 0, 255);">"cart"</span>, cart);</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">return</span><span style="color: rgb(42, 0, 255);">"shopping-cart"</span>;</li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li>In this example, the @SessionAttribute("cart") annotation is used to retrieve the "cart" object from the HttpSession and pass it as a parameter to the showShoppingCart method. The ShoppingCart object is then added to the model and passed to the shopping-cart view, where it can be used to display the contents of the shopping cart.</li>
+   <li>&nbsp;</li>
+   <li value="32" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">How do you set default date format with Spring?</span></li>
+   <li>In Spring, you can set the default date format by using the @DateTimeFormat annotation at the class level or by defining a global date format in the application context.</li>
+   <li>Here's an example of setting the default date format using @DateTimeFormat annotation:</li>
+   <li>&nbsp;</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>Data</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">public class&nbsp;</span>Person&nbsp;{</li>
+   <li><span style="color: rgb(100, 100, 100);">@</span>DateTimeFormat(pattern =&nbsp;<span style="color: rgb(42, 0, 255);">"dd/MM/yyyy"</span>)</li>
+   <li><span style="font-weight: bold; color: rgb(127, 0, 85);">private&nbsp;</span>LocalDate&nbsp;<span style="color: rgb(0, 0, 192);">birthDate</span>;</li>
+   <li>}</li>
+   <li>&nbsp;</li>
+   <li value="33" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Why is Spring MVC so popular?</span></li>
+   <li>Spring MVC is a popular web framework for several reasons:</li>
+   <li>&nbsp;</li>
+   <li>Modularity: Spring MVC is part of the larger Spring framework, which is a modular framework for building enterprise applications.</li>
+   <li>&nbsp;</li>
+   <li>Dependency Injection: Spring MVC uses Dependency Injection (DI), which helps in decoupling the components and promoting code reuse. This makes it easier to write clean, maintainable code.</li>
+   <li>&nbsp;</li>
+   <li>Annotation-based programming model: Spring MVC makes use of annotations to define the mappings between controllers and URLs. This eliminates the need for verbose XML configuration and makes it easier to read and maintain the code.</li>
+   <li>&nbsp;</li>
+   <li>Wide community support: Spring MVC has a large and active community of developers who contribute to the framework and provide support through forums and mailing lists. This means that there is a wealth of documentation, examples, and third-party libraries available, making it easier to get help when needed.</li>
+   <li>&nbsp;</li>
+   <li>Microservices Interview preparation</li>
+   <li>Spring</li>
+   <li>&nbsp;</li>
+   <li value="34" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Loose Coupling?</span></li>
+   <li>Loose coupling is a software design principle that aims to minimize dependencies between components in a system, allowing them to operate independently and be easily replaced or modified without affecting the rest of the system.</li>
+   <li>&nbsp;</li>
+   <li value="35" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a Dependency?</span></li>
+   <li>In Spring, a dependency is a Java object that is needed by a component to perform its function, and is injected into the component using the Spring dependency injection framework. Spring manages the dependencies between the components of a Spring-based application, allowing for loose coupling and easier testing and maintenance of the code. Dependencies in Spring are typically defined in a configuration file or via annotations, and can be automatically injected into components at runtime by Spring's dependency injection mechanism.</li>
+   <li>&nbsp;</li>
+   <li value="36" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is Dependency Injection, Can you give few examples of Dependency Injection?</span></li>
+   <li>Dependency Injection is a software design pattern that allows objects to be created and configured dynamically by an external framework or container, rather than being instantiated and configured by the objects themselves. In Dependency Injection, the objects specify their dependencies as interfaces, and the framework provides the concrete implementation of those interfaces at runtime, without requiring the objects to know about the specific implementation details.</li>
+   <li>&nbsp;</li>
+   <li>Overall, Dependency Injection helps to reduce the complexity of managing dependencies in large software applications, making it easier to maintain and test the code.</li>
+   <li>&nbsp;</li>
+   <li value="37" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is IOC (Inversion of Control)?</span></li>
+   <li>In Spring IOC, the control of the flow of an application is inverted or flipped from the application itself to the Spring container, which takes care of instantiating and configuring objects, and managing their dependencies.</li>
+   <li>&nbsp;</li>
+   <li>Spring IOC is typically configured using an XML file or annotations, which specify the dependencies between objects, and allow Spring to automatically wire the objects together at runtime.</li>
+   <li>&nbsp;</li>
+   <li value="38" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is AutoWiring?</span></li>
+   <li>In Spring, Autowiring is a feature that allows Spring to automatically wire together the dependencies of beans (objects) in a Spring-based application. Autowiring eliminates the need for manual wiring of beans by automatically detecting the dependencies and injecting them at runtime.</li>
+   <li>&nbsp;</li>
+   <li>Spring can also use annotations such as @Autowired, @Qualifier, and @Resource to specify the dependencies.</li>
+   <li>&nbsp;</li>
+   <li value="39" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What are Bean Factory and Application Context?</span></li>
+   <li>Both Bean Factory and Application Context are configurable using XML files or Java annotations, and allow developers to define and configure beans and their dependencies. The choice between using Bean Factory and Application Context depends on the specific requirements of the application, with Bean Factory being a good choice for simple applications, and Application Context being more suitable for larger and more complex applications.</li>
+   <li>&nbsp;</li>
+   <li value="40" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">How do you create an application context with Spring?</span></li>
+   <li>To create an application context with Spring, you typically need to perform the following steps:</li>
+   <li>&nbsp;</li>
+   <li>Choose a type of application context to create, such as AnnotationConfigApplicationContext or ClassPathXmlApplicationContext.</li>
+   <li>&nbsp;</li>
+   <li>Create an instance of the chosen application context class.</li>
+   <li>&nbsp;</li>
+   <li>Use the application context to retrieve any required components or beans.</li>
+   <li>&nbsp;</li>
+   <li>// Create an instance of the AnnotationConfigApplicationContext class</li>
+   <li>AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();</li>
+   <li>&nbsp;</li>
+   <li value="41" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is a Component Scan?</span></li>
+   <li>In Spring, component scanning is a feature that allows the framework to automatically discover and register beans based on classpath scanning.</li>
+   <li>&nbsp;</li>
+   <li>By using component scanning, you can avoid the need to explicitly configure individual beans in your Spring configuration files. Instead, you can simply annotate your classes with certain annotations (such as @Component, @Service, @Controller, or @Repository), and Spring will automatically detect and register those classes as beans.</li>
+   <li>&nbsp;</li>
+   <li value="42" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What does @Autowired signify?</span></li>
+   <li>In Spring, the @Autowired annotation is used to automatically wire (i.e., inject) dependencies into a bean.</li>
+   <li>&nbsp;</li>
+   <li>When you annotate a field, constructor, or setter method with @Autowired, Spring will look for a matching bean of the required type in the application context, and automatically wire it into the annotated component.</li>
+   <li>&nbsp;</li>
+   <li value="43" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is the default scope of a bean?</span></li>
+   <li>In Spring, the default scope of a bean is singleton.</li>
+   <li>&nbsp;</li>
+   <li>This means that by default, Spring will create a single instance of the bean and share it across all the application's components that require it. Whenever a component requests the bean from the application context, Spring will return the same shared instance.</li>
+   <li>&nbsp;</li>
+   <li>For example, consider the following class:</li>
+   <li>&nbsp;</li>
+   <li>@Service</li>
+   <li>public class MyService {</li>
+   <li>}</li>
+   <li>In this example, MyService is annotated with @Service, which is a specialization of the @Component annotation. By default, Spring will create a single instance of MyService and share it across all the components that require it.</li>
+   <li>&nbsp;</li>
+   <li value="44" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Are Spring beans thread safe?</span></li>
+   <li>It depends on the implementation and scope of the bean. By default, Spring beans are singleton-scoped and shared across threads, so if a bean maintains mutable state, it may not be thread-safe. To ensure thread-safety, synchronization or other thread-safe techniques can be used, or a different scope, such as prototype scope, can be used to avoid shared mutable state.</li>
+   <li>&nbsp;</li>
+   <li value="45" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What are the different types of dependency injections?</span></li>
+   <li>There are three main types of dependency injection:</li>
+   <li>&nbsp;</li>
+   <li>Constructor Injection: Dependencies are injected through a class constructor. This is the most commonly used type of injection.</li>
+   <li>&nbsp;</li>
+   <li>Setter Injection: Dependencies are injected through a setter method of the class.</li>
+   <li>&nbsp;</li>
+   <li>Interface Injection: Dependencies are injected through an interface that is implemented by the class. This type of injection is less common than the other two.</li>
+   <li>&nbsp;</li>
+   <li value="46" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What is the difference between XML and Java Configurations for Spring?</span></li>
+   <li>Both approaches have their advantages and disadvantages. XML Configuration is more flexible and can be easier to manage for larger projects. Java Configuration is more concise, readable, and can benefit from the type-safety of the Java language. Ultimately, the choice between the two depends on the specific needs of the project and personal preferences.</li>
+   <li>&nbsp;</li>
+   <li value="47" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">How do you debug problems with Spring Framework?</span></li>
+   <li>Debugging problems with Spring Framework involves the following steps:</li>
+   <li>&nbsp;</li>
+   <li>Check the logs: Spring Framework logs detailed information about its operations and any issues that occur. Checking the logs can help identify the root cause of the problem.</li>
+   <li>&nbsp;</li>
+   <li>Review the code: Review the code to ensure that it is correctly configured and that the dependencies are properly injected.</li>
+   <li>&nbsp;</li>
+   <li>Check the configuration: Review the Spring configuration files or Java code to ensure that the application context is correctly configured.</li>
+   <li>&nbsp;</li>
+   <li>Use debugging tools: Use a debugger to step through the code and identify the specific location where the problem is occurring. Tools like Eclipse or IntelliJ IDEA provide debugging support for Spring applications.</li>
+   <li>&nbsp;</li>
+   <li>Check external dependencies: Verify that any external dependencies, such as databases or web services, are correctly configured and accessible.</li>
+   <li>&nbsp;</li>
+   <li>Seek help from the community: If the problem is complex, seek help from the Spring community by posting on forums or using other support channels.</li>
+   <li>&nbsp;</li>
+   <li value="48" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What are important Spring Modules?</span></li>
+   <li>Spring is a very comprehensive framework with many modules that provide different functionalities for building enterprise applications. Some of the most important Spring modules are:</li>
+   <li>&nbsp;</li>
+   <li>Spring Core: This module provides the basic features of the Spring framework, including the Inversion of Control (IoC) container and the Dependency Injection (DI) mechanism.</li>
+   <li>&nbsp;</li>
+   <li>Spring MVC: This module provides a web framework for building web applications, with support for handling requests, processing views, and managing the application flow.</li>
+   <li>&nbsp;</li>
+   <li>Spring Data: This module provides a consistent and simple programming model for data access, with support for many different types of data stores, such as relational databases, NoSQL databases.</li>
+   <li>&nbsp;</li>
+   <li>Spring Security: This module provides a comprehensive security framework for protecting web applications and services, with support for authentication, authorization, and secure communication.</li>
+   <li>&nbsp;</li>
+   <li>Spring Integration: This module provides support for building integration solutions, such as messaging systems, ETL pipelines, and event-driven architectures.</li>
+   <li>&nbsp;</li>
+   <li>Spring Cloud: This module provides tools and frameworks for building and deploying cloud-native applications, with support for service discovery, configuration management, and distributed tracing.</li>
+   <li>&nbsp;</li>
+   <li>Spring Boot: This module provides a set of opinionated configurations and conventions for building Spring applications, with the goal of reducing development time and increasing productivity.</li>
+   <li>&nbsp;</li>
+   <li>These are just a few examples of the many Spring modules available. Each module provides a specific set of features and functionalities, allowing developers to choose the ones that best fit their project requirements.</li>
+   <li>&nbsp;</li>
+   <li value="49" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">Name some of the design patterns used in Spring Framework?</span></li>
+   <li>Spring Framework makes use of several design patterns to provide a flexible and extensible architecture for building enterprise applications. Some of the design patterns used in Spring Framework are:</li>
+   <li>&nbsp;</li>
+   <li>Dependency Injection (DI): Spring makes extensive use of the DI pattern to inject dependencies into components, decoupling the dependencies and providing flexibility in component configuration.</li>
+   <li>&nbsp;</li>
+   <li>Singleton Pattern: Many of the Spring beans are configured as singletons, ensuring that only one instance of a particular bean is created and shared across the application.</li>
+   <li>&nbsp;</li>
+   <li>Template Method Pattern: Spring uses the template method pattern in its core JDBC and Hibernate support to provide a consistent way of performing database operations.</li>
+   <li>&nbsp;</li>
+   <li>Proxy Pattern: Spring uses the proxy pattern extensively to provide AOP (Aspect-Oriented Programming) features such as transaction management, caching, and security.</li>
+   <li>&nbsp;</li>
+   <li value="50" style="margin-top: 0px; margin-bottom: 0px; vertical-align: middle; color: rgb(84, 24, 77);"><span style="font-size: 18pt;">What do you think about Spring Framework?</span></li>
+   <li>Spring Framework is a widely used open-source framework for building enterprise applications in Java. It provides a comprehensive set of features and functionalities for building scalable, flexible, and robust applications. Spring Framework makes use of many design patterns and architectural principles to provide a modular and extensible architecture, which simplifies application development and maintenance.</li>
+  </ul> 
+ </body>
+</html>
