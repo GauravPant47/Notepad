@@ -22,15 +22,9 @@
 </head>
 
 <body>
-	<!-- Dasbord slider -->
-	<div class="menu" id="menu">
-		<li th:each="otherFile : ${files}"><a th:href="@{/notepad/file/{fileName}(fileName=${otherFile.fileName})}"
-				th:text="${otherFile.fileName}"></a></li>
-	</div>
 	<!-- Navbar content -->
 	<header>
 		<nav class="navbar">
-			<button class="open-button" onclick="toggleMenu()">☰</button>
 			<div class="logo">
 				<a href="/notepad/">Notepad</a>
 			</div>
