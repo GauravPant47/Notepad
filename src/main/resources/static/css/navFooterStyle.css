@@ -66,6 +66,7 @@ body.dark-mode {
 	background: none;
 	border: none;
 	cursor: pointer;
+	color: green;
 }
 
 /* Style the dark mode toggle */
