@@ -22,7 +22,7 @@ import com.notepas.textEditor.service.NotepadService;
 @Service
 public class NotepadServiceImpl implements NotepadService {
 
-	private final String FILES_DIRECTORY = "files/";
+	private final String FILES_DIRECTORY = "C:/Users/ADMIN/Documents/NoteBooks/files/";
 
 	public NotepadServiceImpl() {
 		initializeFilesDirectory();

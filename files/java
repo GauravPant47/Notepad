@@ -91,7 +91,7 @@
    </div> 
    <div> <font face="Garamond"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;">Can you overload main method in java?</span></font> 
    </div> 
-   <div> <font face="Garamond"><span style="font-size: 14pt;">Yes, you can overload main method in java but when you run your program, JVM will search for public static void main(String[] args) and execute that method.&nbsp;</span></font> 
+   <div> <font face="Garamond"><span style="font-size: 14pt;">Yes, you can overload main method in java but when you run your program, JVM will search for public static void main(String[] args) and execute that method.</span></font> 
    </div> 
    <div> <font face="Garamond"><span style="font-size: 18pt; color: rgb(81, 81, 81); font-weight: bold;"><br></span></font> 
    </div> 
@@ -146,7 +146,7 @@
      </tr> 
      <tr>
       <td>Method for storing data</td>
-      <td>It stores data in a form of key-&gt;value pair.So it uses put(key,value) method for storing data</td>
+      <td>It stores data in a form of key-&gt;value pair.So it uses put(key, value) method for storing data</td>
       <td>It uses add(value) method for storing data</td>
      </tr> 
      <tr>
