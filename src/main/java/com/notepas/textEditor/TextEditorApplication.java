@@ -14,7 +14,7 @@ public class TextEditorApplication {
 		SpringApplication.run(TextEditorApplication.class, args);
 
 		// Open default web browser				
-		openBrowser("http://localhost:9091/notepad/");
+		openBrowser("http://localhost:8080/notepad/");
 	}
 
 	private static void openBrowser(String url) {
