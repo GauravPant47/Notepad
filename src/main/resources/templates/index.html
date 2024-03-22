@@ -78,19 +78,12 @@
 
 	</div>
     <!-- Footer -->
-    <footer class="footer">
-        <p>Version: <span th:text="${version}"></span> | &copy; All Rights Reserved | <span id="date"></span> | <span id="time"></span></p>
+  <footer class="footer">
+        <p>Version: <span th:text="${version}"></span></p>
+        <!-- <p>&copy; All Rights Reserved</p> -->
+        <span id="date"></span>
+        <span id="time"></span>
     </footer>
-     <script th:inline="javascript">
-    /*<![CDATA[*/
-    	 document.getElementById('date').textContent = new Date().toLocaleDateString();
-    function updateClock() {
-    	 document.getElementById('time').textContent = new Date().toLocaleTimeString();
-    }
-    // Update the clock every second
-    setInterval(updateClock, 1000);
-    /*]]>*/
-    </script>
 </body>
 
 </html>

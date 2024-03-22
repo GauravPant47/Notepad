@@ -19,6 +19,7 @@
 <script type="text/javascript" th:src="@{/tute/button.js}"></script>
 <script type="text/javascript" th:src="@{/tute/editor.js}"></script>
 <script type="text/javascript" th:src="@{/tute/jquary.js}"></script>
+<script type="text/javascript" th:src="@{/tute/script.js}"></script>
 </head>
 
 <body>
@@ -192,9 +193,6 @@
 	</header>
 	<!-- Navbar start -->
 	<div class="main-content" id="main-content" style="margin-top: 60px;">
-		<h2 style="font-size: 13px;">
-			Edit File: <span th:text="${file.fileName}"></span>
-		</h2>
 		<!-- Editor -->
 		<form id="editForm" method="post"
 			th:action="@{/notepad/file/{fileName}(fileName=${file.fileName})}">
@@ -209,11 +207,14 @@
 		</form>
 	</div>
 	<!-- Footer -->
-	<!-- <footer>
-		<div class="footer-content">
-			<p>&copy; 2023 Your Company. All rights reserved.</p>
-		</div>
-	</footer> -->
+  <footer class="footer">
+        <p>Version: <span th:text="${version}"></span></p>
+        <!-- <p>&copy; All Rights Reserved</p> -->
+        <span id="date"></span>
+        <span id="time"></span>
+		<p>Edit File : <span th:text="${file.fileName}"></span></p>
+		  <p id="display">00:00:00</p>
+    </footer>
 </body>
 
 </html>
