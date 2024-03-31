@@ -6,70 +6,95 @@ body {
 }
 
 .container {
-	max-width: 800px;
-	margin: 50px auto;
-	padding: 20px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	cursor: pointer;
 }
 
-.notepad-files {
-	margin-bottom: 30px;
+.cart {
+    width: 150px; /* Fixed width for each cart */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 50px;
+	transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
+
+}
+.cart:hover {
+	transform: scale(1.05); /* Increase size slightly on hover */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow effect on hover */
+	background-color: #f0f0f0; /* Change background color on hover */
+}
+.cart img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 3px 70px 3px 3px;
 }
 
-.notepad-files h2,
-.create-new-file h2 {
-	color: #333;
-	border-bottom: 2px solid #333;
-	padding-bottom: 5px;
+.cart .delete-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
 }
 
-ul {
-	list-style: none;
-	padding: 0;
+.cart a {
+	text-decoration: none;
 }
 
-.file-info {
+.cart .text-name {
+	color: black;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+.search-bar {
+	position: absolute;
+	top: 7em;
+	right: 10px;
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
 }
 
-.file-info a {
-	text-decoration: none;
-	color: #3498db;
-	font-weight: bold;
+.search-bar label {
+	position: relative;
+	right: 27cm;
+	font-size: 30px;
 }
 
-.file-info a:hover {
-	text-decoration: underline;
-	color: #2ecc71;
-}
-
-.file-info a i {
-	color: #3498db;
-}
-
-.file-info a i:hover {
-	color: rgb(223, 134, 134);
-}
-
-.file-info span {
-	margin: 0 5px;
-	color: #333;
-}
-
-.create-new-file label {
-	display: block;
-	margin-bottom: 5px;
-	color: #333;
-}
-
-.create-new-file input {
-	width: 100%;
-	padding: 8px;
-	margin-bottom: 10px;
+.search-input {
+	padding: 5px;
+	margin-right: 10px;
 	border: 1px solid #ccc;
-	border-radius: 4px;
+}
+
+.search-button {
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+	.cart {
+		width: calc(50% - 20px); /* 50% width for each cart with margin */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cart {
+		width: calc(50% - 20px); /* 50% width for each cart with margin */
+	}
 }

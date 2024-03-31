@@ -147,20 +147,55 @@ input:checked+.slider:before {
 }
 
 /* Footer styles */
+/* Move your CSS to an external stylesheet */
 .footer {
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
 	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: #3498db;
+	background-color: var(--primary-color);
 	color: black;
-	text-align: center;
-	padding: 5px;
+	height: 20px;
 }
 
-.footer.dark-mode-nav {
-	background-color: #111;
-	color: #fff;
+.footer p {
+	margin-left: 100vh;
+}
+
+.footer .file-name {
+	align-items: center;
+	display: flex;
+	height: 19px;
+}
+
+.footer .file-name p span {
+	margin-left: 10px;
+}
+
+.footer .version {
+	align-items: center;
+	display: flex;
+	background-color: rgb(113, 238, 113);
+	height: 19px;
+}
+
+.footer .version p {
+	margin-left: 5px;
+}
+
+.footer .version p span {
+	margin-left: 10px;
+	padding-right: 5px
+}
+
+.footer span {
+	/* position: fixed;
+    right: 0;
+    padding: 0px 50px 0px; */
+	margin-left: 30px;
 }
 /* Responsive design */
 @media ( max-width : 768px) {
