@@ -52,7 +52,25 @@
 	</header>
 	<!-- Main Content -->
 	<div class="main-content" id="main-content">
-		<div class="container">
+	     <form class="search-bar" action="/notepad/create" method="post">
+	     <label for="newFileName">Library : </label> 
+            <input type="text" name="newFileName" class="search-input" placeholder="Add new file name"style="border-radius: 2px;">
+            <button class="search-button" type="submit" style="border-radius: 2px;">Create</button>
+        </form>
+        
+	        <div class="container">
+            <!-- Sample carts -->
+    <a th:each="file : ${files}" th:href="@{/notepad/file/{fileName}(fileName=${file.fileName})}">
+        <div class="cart">
+            <img th:src="@{/image/Notepad-logos.ico}" alt="Product Image">
+            <a class="delete-icon" th:href="@{/notepad/delete/{fileName}(fileName=${file.fileName})}">❌</a>
+            <a class="text-name" th:text="${file.fileName}"></a>
+        </div>
+    </a>
+            <!-- Repeat the cart div for more carts -->
+        </div>
+	
+	<!-- 	<div class="container">
 			<section class="notepad-files">
 				<h2>Notepad Files</h2>
 				<ul>
@@ -69,12 +87,12 @@
 			<section class="create-new-file">
 				<h2>Create a New File</h2>
 				<form action="/notepad/create" method="post">
-					<label for="newFileName">File Name:</label> <input type="text" id="newFileName" name="newFileName"
-						required> <br>
+					<label for="newFileName">File Name:</label> 
+					<input type="text" id="newFileName" name="newFileName" required> <br>
 					<button type="submit" class="btn btn-1">Create</button>
 				</form>
 			</section>
-		</div>
+		</div>-->
 
 	</div>
     <!-- Footer -->
